@@ -1,1 +1,58 @@
-// Начните писать стили здесь
+@import "./page-body.less";
+@import "./page-container.less";
+@import "./main-header.less";
+@import "./main-nav.less";
+@import "./popup-menu-wrapper";
+@import "./popup-menu.less";
+@import "./hero.less";
+@import "./page-intro.less";
+@import "./advantages-list.less";
+@import "./compact-container.less";
+@import "./hotel-search.less";
+@import "./button.less";
+@import "./main-footer.less";
+@import "./hero-compact.less";
+@import "./review-form.less";
+@import "./review-block.less";
+@import "./popup-error.less";
+@import "./popup-message.less";
+@import "./popup.less";
+@import "./block-photo.less";
+@import "./photos.less";
+@import "./block-video.less";
+
+@base-color: #ffffff;
+@primary-accent: #81b3d2;
+@secondary-accent: #eeeeee;
+@text-color-primary: #ffffff;
+@text-color-secondary: #000000;
+@text-color-subsecondary: #333333;
+@field-color: #f2f2f2;
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsansbold.woff2") format("woff2");
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+

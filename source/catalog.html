@@ -4,115 +4,145 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <div class="page-container">
+
     <header class="main-header">
       <a class="main-header__logo" href="#">
-        <img src="images/logo.svg" width="185" height="96" alt="Логотип города Седона.">
+        <img src="/images/logo.svg" width="185" height="96" alt="Логотип города Седона.">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button class="open-menu__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list">
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="#">
+      </nav>
+      <div class="popup-menu-wrapper">
+        <ul class="popup-menu popup-menu--closed">
+          <li class="menu-list__item">
+            <a class="menu-list__link menu-list__link--current" href="#">
               Главная
             </a>
           </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="#">
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">
               Фото и видео
             </a>
           </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="#">
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">
               Форма отзыва
             </a>
           </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="#">
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="#">
               HTML ACADEMY
             </a>
           </li>
         </ul>
-      </nav>
+      <button class="close-menu__toggle popup-menu--closed" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
+      </div>
     </header>
+
     <main class="main-container">
-      <h1 class="">Страница каталога</h1>
+      <h1 class="visually-hidden">Страница каталога</h1>
+
       <div class="hero-compact">
         <img src="/images/hero-compact-text.svg" width="229" height="39" alt="Sedona.">
       </div>
-      <div class="text-block">
-        <p class="block__title">Фото и видео</p>
-        <p class="block__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+
+      <div class="page-intro">
+        <div class="page-intro__content-wrapper">
+          <p class="intro__title">Фото и видео</p>
+          <p class="intro__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
       </div>
+
       <section class="photos">
         <ul class="photo__list">
-          <li class="photo__item photo-item">
-            <img src="/images/catalog/photo-1-s.jpg" width="280" height="280" alt="Дорога, уходящая в закат.">
-            <div class="photo__discription-wrapper">
-              <p class="photo__discription-title">Неродные просторы</p>
-              <p class="photo__discription-text">Автор фото: Борис</p>
-            </div>
-            <div class="photo__like-wrapper">
-              <button class="photo__like-button"></button>
-              <span class="like__counter">1350</span>
-            </div>
-          </li>
-          <li class="photo__item photo-item">
-            <img src="/images/catalog/photo-2-s.jpg" width="280" height="280" alt="Кактус на фоне гор.">
-            <div class="photo__discription-wrapper">
-              <p class="photo__discription-title">Местная растительность</p>
-              <p class="photo__discription-text">Автор фото: Сергей</p>
-            </div>
-            <div class="photo__like-wrapper">
-              <button class="photo__like-button"></button>
-              <span class="like__counter">143</span>
+
+          <li class="photo__item block-photo">
+            <div class="block-photo__container">
+              <img src="/images/catalog/photo-1-s.jpg" width="280" height="280" alt="Дорога, уходящая в закат.">
+              <div class="photo__discription-wrapper">
+                <p class="photo__title">Неродные просторы</p>
+                <p class="photo__text">Автор фото: Борис</p>
+              </div>
+              <div class="photo__like-wrapper">
+                <button class="photo__like-button"></button>
+                <span class="like__counter">1350</span>
+              </div>
             </div>
           </li>
-          <li class="photo__item photo-item">
-            <img src="/images/catalog/photo-3-s.jpg" width="280" height="280" alt="Извилистая горная дорога среди деревьев.">
-            <div class="photo__discription-wrapper">
-              <p class="photo__discription-title">Дорога на север</p>
-              <p class="photo__discription-text">Автор фото: Петр</p>
-            </div>
-            <div class="photo__like-wrapper">
-              <button class="photo__like-button"></button>
-              <span class="like__counter">96</span>
-            </div>
-          </li>
-          <li class="photo__item photo-item">
-            <img src="/images/catalog/photo-4-s.jpg" width="280" height="280" alt="Достопримечательность – Мост Дьявола.">
-            <div class="photo__discription-wrapper">
-              <p class="photo__discription-title">Мост дьявола</p>
-              <p class="photo__discription-text">Автор фото: Антон</p>
-            </div>
-            <div class="photo__like-wrapper">
-              <button class="photo__like-button"></button>
-              <span class="like__counter">254</span>
+
+          <li class="photo__item block-photo">
+            <div class="block-photo__container">
+              <img src="/images/catalog/photo-2-s.jpg" width="280" height="280" alt="Кактус на фоне гор.">
+              <div class="photo__discription-wrapper">
+                <p class="photo__title">Местная растительность</p>
+                <p class="photo__text">Автор фото: Сергей</p>
+              </div>
+              <div class="photo__like-wrapper">
+                <button class="photo__like-button"></button>
+                <span class="like__counter">143</span>
+              </div>
             </div>
           </li>
+
+          <li class="photo__item block-photo">
+            <div class="block-photo__container">
+              <img src="/images/catalog/photo-3-s.jpg" width="280" height="280" alt="Извилистая горная дорога среди деревьев.">
+              <div class="photo__discription-wrapper">
+                <p class="photo__title">Дорога на север</p>
+                <p class="photo__text">Автор фото: Петр</p>
+              </div>
+              <div class="photo__like-wrapper">
+                <button class="photo__like-button"></button>
+                <span class="like__counter">96</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="photo__item block-photo">
+            <div class="block-photo__container">
+              <img src="/images/catalog/photo-4-s.jpg" width="280" height="280" alt="Достопримечательность – Мост Дьявола.">
+              <div class="photo__discription-wrapper">
+                <p class="photo__title">Мост дьявола</p>
+                <p class="photo__text">Автор фото: Антон</p>
+              </div>
+              <div class="photo__like-wrapper">
+                <button class="photo__like-button"></button>
+                <span class="like__counter">254</span>
+              </div>
+            </div>
+          </li>
+
         </ul>
+
       </section>
-      <section class="video">
-        <div class="text-block">
-          <p class="block__title">Все еще сомневаетесь?</p>
-          <p class="block__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+
+      <section class="videos">
+
+        <div class="block-video">
+          <div class="block-video__container">
+            <p class="video__title">Все еще сомневаетесь?</p>
+            <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <img src="/images/catalog/video-s.jpg" width="280" height="177" alt="Здесь должна быть видеопрезентация.">
+          </div>
         </div>
-        <div class="video-container">
-          <img src="/images/catalog/video-s.jpg" width="280" height="177" alt="Здесь должна быть видеопрезентация.">
-        </div>
+
       </section>
+
     </main>
+
     <footer class="main-footer">
-      <div class="footer-wrapper">
-        <div class="tag">
-          <a class="tag__link" href="#">#VISITSEDONA</a>
-        </div>
-        <div class="social">
+      <div class="footer__wrapper">
+          <a class="footer__tag" href="#">#VISITSEDONA</a>
+        <div class="footer__social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social__list">
             <li class="social__item">
@@ -127,16 +157,17 @@
             </li>
           </ul>
         </div>
-        <div class="academy-site">
+        <div class="footer__academy-site">
           <a class="academy__link" href="https://htmlacademy.ru/">Разработано
-            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35">
-              <path fill="#000"
-                d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
-            </svg>
+            <!-- <svg class="academy__link-img" xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35"> -->
+              <!-- <path fill="#000" -->
+                <!-- d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" /> -->
+            <!-- </svg> -->
           </a>
         </div>
       </div>
     </footer>
+
 </body>
 
 </html>
