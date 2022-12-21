@@ -1,0 +1,93 @@
+.advantages-list {
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-item {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: @base-color;
+}
+
+.advantages__with-icon,
+.advantages__without-icon {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.advantages-item-photo {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.advantages-item__title {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-item__counter {
+  margin: 11px 0 0 0;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-item__discription {
+  margin: 17px 0 0 0;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.item--first {
+  padding: 54px 18px 40px;
+  background-image: url("/images/index/divider-2-s.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.item--primary-accent {
+  background-color: @primary-accent;
+  color: @text-color-primary;
+}
+
+.secondary-accent {
+  background-color: @secondary-accent;
+}
+
+.item__content-wrapper {
+  padding: 37px 18px;
+}
+
+.advantages-item--compact {
+  align-items: flex-start;
+
+  h3 {
+    text-align: left;
+  }
+
+  p {
+    text-align: left;
+    color: @text-color-subsecondary;
+  }
+}
