@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="./css/style.css" rel="stylesheet">
 </head>
@@ -14,45 +15,48 @@
       <a class="main-header__logo" href="#">
         <img src="/images/logo.svg" width="185" height="96" alt="Логотип города Седона.">
       </a>
+
       <nav class="main-nav">
-        <button class="open-menu__toggle" type="button">
+        <button class="menu__toggle menu__toggle--open" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+        <div class="nav-menu__wrapper">
+          <ul class="nav__menu">
+            <li class="menu__item">
+              <a class="menu__link menu__link--current" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Фото и видео
+              </a>
+            </li>
+            <li class="menu__item menu__item--logo-spacer"></li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                HTML ACADEMY
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="menu__toggle menu__toggle--close" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
       </nav>
-      <div class="popup-menu-wrapper">
-        <ul class="popup-menu popup-menu--closed">
-          <li class="menu-list__item">
-            <a class="menu-list__link menu-list__link--current" href="#">
-              Главная
-            </a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="#">
-              Фото и видео
-            </a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="#">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="#">
-              HTML ACADEMY
-            </a>
-          </li>
-        </ul>
-      <button class="close-menu__toggle popup-menu--closed" type="button">
-        <span class="visually-hidden">Закрыть меню</span>
-      </button>
-      </div>
     </header>
 
     <main class="main-container">
       <h1 class="visually-hidden">Страница отзыва</h1>
 
       <div class="hero-compact">
-        <img src="/images/hero-compact-text.svg" width="229" height="39" alt="Sedona.">
+        <img class="hero-compact__slogan" src="/images/hero-compact-text.svg" width="229" height="39"
+          alt="Sedona.">
       </div>
 
         <div class="page-intro">
@@ -107,7 +111,8 @@
             </div>
           </div>
         </div>
-        <div class="review-block">
+
+        <div class="review-block review-block--big">
           <div class="review-block__container">
             <p class="block__title">Ваше общее впечатление:</p>
             <div class="block__content-wrapper">
@@ -132,7 +137,7 @@
           </div>
         </div>
 
-        <div class="review-block">
+        <div class="review-block review-block--big">
           <div class="review-block__container">
             <p class="block__title">Посещенные достопримечательности:</p>
             <div class="block__content-wrapper">
@@ -162,7 +167,7 @@
           </div>
         </div>
 
-        <div class="review-block">
+        <div class="review-block review-block--big">
           <div class="review-block__container">
             <p class="block__title">Опишите свои эмоции:</p>
             <div class="block__content-wrapper">
