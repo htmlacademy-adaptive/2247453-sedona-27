@@ -1,31 +1,36 @@
 .hotel-search {
-  margin: 0;
   padding: 39px 18px 49px;
   background-color: @base-color;
+
+  @media (min-width: @tablet-width) {
+    padding: 61px 155px 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 61px 371px 66px;
+  }
 }
 
 .search__text-wrapper {
   padding: 0 11px 32px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 11px 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 11px 46px;
+  }
 }
 
 .hotel-search__title {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
+  .font-title();
   font-size: 21px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
   color: @text-color-secondary;
 }
 
 .hotel-search__discription {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
+  .font-text();
   text-transform: uppercase;
   color: @text-color-subsecondary;
 }
