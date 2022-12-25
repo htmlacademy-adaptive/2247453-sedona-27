@@ -2,8 +2,14 @@
   background-color: @base-color;
 }
 
-.block-photo__container {
-  padding: 24px 20px 24px 20px;
+.photo__item--full-wide {
+  @media (min-width: @tablet-width) {
+    grid-column: span 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: span 3;
+  }
 }
 
 .photo__discription-wrapper {

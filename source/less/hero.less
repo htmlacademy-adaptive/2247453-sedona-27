@@ -1,10 +1,32 @@
 .hero {
   margin: 0;
-  padding: 90px 19px 85px 19px;
-  background-image: url("/images/index/divider-s.svg"), url("/images/index/hero.jpg");
+  padding: 0;
+  min-height: 390px;
+  background-image: url("/images/hero-divider.svg"), url("/images/index/hero.jpg");
   background-position: bottom center;
   background-repeat: no-repeat;
-  background-size: cover, cover;
+  background-size: 172%, cover;
   background-color: #999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 0 90px 0;
+    min-height: 518px;
+    background-size: 150%, cover;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 0 90px 0;
+    min-height: 518px;
+    background-size: 100%, cover;
+  }
+}
+
+.hero__slogan {
+  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    transform: scale(1.6);
+  }
 }
 

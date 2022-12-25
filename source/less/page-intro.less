@@ -7,29 +7,28 @@
   flex-direction: column;
   gap: 35px;
   padding: 36px 20px 26px;
+
+  @media (min-width: @tablet-width) {
+    padding: 48px 124px 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 59px 358px 45px;
+  }
 }
 
 .intro__title {
-  margin: 0;
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
+  .font-title();
+  color: @text-color-secondary;
+
+  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    font-size: 21px;
+  }
 }
 
 .intro__text {
-  margin: 0;
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
+  .font-text();
   text-transform: uppercase;
-  color: #333333;
+  color: @text-color-subsecondary;
 }
 

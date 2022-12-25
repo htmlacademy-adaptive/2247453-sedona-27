@@ -1,0 +1,80 @@
+.advantages-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: @base-color;
+  padding: 37px 18px;
+
+  @media (min-width: @tablet-width) {
+    padding: 42px 22px 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 52px 50px 51px;
+  }
+}
+
+.item--first {
+  @media (max-width: @tablet-width) {
+    padding: 54px 18px 40px;
+    background-image: url("/images/index/divider-2-s.svg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.advantages-item--compact {
+  @media (max-width: @tablet-width) {
+    min-height: 112px;
+    padding: 25px 18px 25px 65px;
+    align-items: flex-start;
+
+    p {
+      text-align: left;
+    }
+  }
+}
+
+.advantages-item--with-image {
+  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    min-height: 330px;
+    box-sizing: border-box;
+  }
+}
+
+.advantages-item--without-image {
+  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    min-height: 256px;
+    box-sizing: border-box;
+  }
+}
+
+.item--primary-accent {
+  background-color: @primary-accent;
+  color: @text-color-primary;
+}
+
+.item--secondary-accent {
+  background-color: @secondary-accent;
+}
+
+.advantages-item__title {
+  .font-title();
+
+  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    font-size: 21px;
+  }
+}
+
+.advantages-item__counter {
+  .font-text();
+  text-transform: uppercase;
+  margin: 11px 0 0 0;
+}
+
+.advantages-item__discription {
+  .font-text();
+  text-transform: uppercase;
+  margin: 17px 0 0 0;
+}
