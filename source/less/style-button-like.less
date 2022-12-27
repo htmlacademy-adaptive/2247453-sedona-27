@@ -1,0 +1,35 @@
+.style-button-like {
+  color: @text-color-primary;
+  background-color: @primary-accent;
+
+  svg {
+    fill: @text-color-primary;
+  }
+
+  &:hover {
+    color: fade(@text-color-primary, 60%);
+    background-color: @primary-accent-hover;
+
+    svg {
+      fill: fade(@text-color-primary, 60%);
+    }
+  }
+
+  &:active {
+    color: fade(@text-color-primary, 30%);
+    background-color: @primary-accent-active;
+
+    svg {
+      fill: fade(@text-color-primary, 30%);
+    }
+  }
+
+  &:disabled {
+    color: @text-color-primary;
+    background-color: @disabled-element-color;
+
+    svg {
+      fill: @text-color-primary;
+    }
+  }
+}

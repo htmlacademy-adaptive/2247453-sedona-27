@@ -37,16 +37,71 @@
 }
 
 .advantages-item--with-image {
-  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 158px;
     min-height: 330px;
     box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 170px;
   }
 }
 
 .advantages-item--without-image {
-  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     min-height: 256px;
     box-sizing: border-box;
+  }
+}
+
+.advantages-item--housing::before {
+  position: absolute;
+  content: url(/images/index/icon-house.svg); /* stylelint-disable-line */
+  width: 40px;
+  height: 38px;
+
+  @media (max-width: @tablet-width) {
+    left: 10px;
+  }
+
+  @media (min-width: @tablet-width) {
+    transform: scale(2);
+    top: 74px;
+  }
+}
+
+.advantages-item--food::before {
+  position: absolute;
+  content: url(/images/index/icon-burger.svg); /* stylelint-disable-line */
+  width: 40px;
+  height: 36px;
+
+  @media (max-width: @tablet-width) {
+    left: 10px;
+  }
+
+  @media (min-width: @tablet-width) {
+    transform: scale(2);
+    top: 74px;
+  }
+}
+
+.advantages-item--gifts::before {
+  position: absolute;
+  content: url(/images/index/icon-gift.svg); /* stylelint-disable-line */
+  width: 32px;
+  height: 38px;
+
+  @media (max-width: @tablet-width) {
+    left: 10px;
+  }
+
+  @media (min-width: @tablet-width) {
+    transform: scale(2);
+    top: 74px;
   }
 }
 
@@ -57,12 +112,18 @@
 
 .item--secondary-accent {
   background-color: @secondary-accent;
+  color: @text-color-secondary;
+
+  .advantages-item__counter::before {
+    background-color: @text-color-secondary;
+    box-shadow: 40px 0 0 0 @text-color-secondary;
+  }
 }
 
 .advantages-item__title {
   .font-title();
 
-  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     font-size: 21px;
   }
 }
@@ -71,6 +132,18 @@
   .font-text();
   text-transform: uppercase;
   margin: 11px 0 0 0;
+  position: relative;
+}
+
+.advantages-item__counter::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -12px;
+  width: 8px;
+  height: 1px;
+  background-color: @text-color-primary;
+  box-shadow: 40px 0 0 0 @text-color-primary;
 }
 
 .advantages-item__discription {
