@@ -1,5 +1,25 @@
 .block-photo {
   background-color: @base-color;
+  border-top: 1px solid #e5e5e5;
+  position: relative;
+  padding: 24px 20px 24px;
+
+  &:last-child {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  img {
+    display: block;
+  }
+
+  @media (min-width: @tablet-width) {
+    border: 0;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
 }
 
 .photo__item--full-wide {
@@ -12,8 +32,32 @@
   }
 }
 
+.photo__item--small:nth-child(odd) {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    .photo__discription-wrapper {
+      background-color: #eaeaea;
+    }
+  }
+}
+
 .photo__discription-wrapper {
   padding: 15px 0 11px;
+
+  @media (min-width: @tablet-width) {
+    padding: 22px 20px 15px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: fade(#000000, 30%);
+  }
 }
 
 .photo__title {
@@ -25,6 +69,10 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .photo__text {
@@ -35,9 +83,32 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
+}
+
+.photo__like-wrapper {
+  margin-top: 11px;
+}
+
+.photo__like-button {
+  width: 23px;
+  height: 21px;
+  border: 0;
+  background-color: transparent;
+  fill: #000000;
+  opacity: 0.3;
+
+  @media (min-width: @desktop-width) {
+    fill: #ffffff;
+    opacity: 1;
+  }
 }
 
 .like__counter {
+  margin-left: 14px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -45,4 +116,8 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
