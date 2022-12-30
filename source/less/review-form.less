@@ -1,6 +1,5 @@
 .review-form {
   background-color: @base-color;
-  padding: 0 20px 0 20px;
   display: grid;
   grid-template-columns: 1fr;
 
@@ -10,16 +9,20 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 0 60px 0 60px;
+    column-gap: 0;
+    row-gap: 48px;
+    padding: 0 60px 64px 60px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 120px 0 120px;
+    padding: 0 120px 64px 120px;
+    column-gap: 0;
+    row-gap: 56px;
   }
 }
 
 .review-form__button-wrapper {
-  margin-top: 56px;
+  margin-top: 32px;
 
   @media (min-width: @tablet-width), (min-width: @desktop-width) {
     margin-top: 0;
@@ -27,6 +30,7 @@
 }
 
 .review-form__button-legend {
+  padding: 0 20px;
   text-align: right;
   display: block;
   font-family: "PT Sans", sans-serif;
@@ -36,4 +40,15 @@
   line-height: 21px;
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    font-size: 14px;
+    position: relative;
+    top: 40%;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 96px;
+  }
 }

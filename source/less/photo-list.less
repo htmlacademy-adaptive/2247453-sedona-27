@@ -1,15 +1,16 @@
 .photo-list {
+  background-color: @base-color;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 50px;
 
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     gap: 0;
+    padding: 0 60px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(3, 1fr);
-    gap: 0;
+    padding: 0;
   }
 }
