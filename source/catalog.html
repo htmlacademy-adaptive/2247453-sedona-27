@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="./css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
@@ -13,7 +16,7 @@
 
     <header class="main-header">
       <a class="main-header__logo" href="#">
-        <img src="/images/logo.svg" focusable="false" width="185" height="96" alt="Логотип города Седона.">
+        <img src="img/logo.svg" focusable="false" width="185" height="96" alt="Логотип города Седона.">
       </a>
 
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -59,7 +62,7 @@
       <h1 class="visually-hidden">Страница каталога</h1>
 
       <div class="hero-compact">
-        <img src="/images/hero-compact-text.svg" width="229" height="39" alt="Sedona.">
+        <img src="img/hero/hero-compact-text.svg" width="229" height="39" alt="Sedona.">
       </div>
 
       <div class="page-intro">
@@ -73,7 +76,13 @@
 
           <li class="photo__item photo__item--full-wide block-photo">
             <div class="block-photo__container">
-              <img src="/images/catalog/photo-1-s.jpg" width="280" height="280" alt="Дорога, уходящая в закат.">
+
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
+                <img src="img/catalog/photo-1-mobile.jpg" srcset="img/catalog/photo-1-mobile@2x.jpg 2x" width="100%" height="auto" alt="Дорога, уходящая в закат.">
+              </picture>
+
               <div class="photo__discription-wrapper">
                 <div class="photo__text-wrapper">
                   <p class="photo__title">Неродные просторы</p>
@@ -93,7 +102,7 @@
 
           <li class="photo__item photo__item--small block-photo">
             <div class="block-photo__container">
-              <img src="/images/catalog/photo-2-s.jpg" width="280" height="280" alt="Кактус на фоне гор.">
+              <img src="img/catalog/photo-2-s.jpg" width="280" height="280" alt="Кактус на фоне гор.">
               <div class="photo__discription-wrapper">
                 <div class="photo__text-wrapper">
                   <p class="photo__title">Местная растительность</p>
@@ -113,7 +122,7 @@
 
           <li class="photo__item photo__item--small block-photo">
             <div class="block-photo__container">
-              <img src="/images/catalog/photo-3-s.jpg" width="280" height="280" alt="Извилистая горная дорога среди деревьев.">
+              <img src="img/catalog/photo-3-s.jpg" width="280" height="280" alt="Извилистая горная дорога среди деревьев.">
               <div class="photo__discription-wrapper">
                 <div class="photo__text-wrapper">
                   <p class="photo__title">Дорога на север</p>
@@ -133,7 +142,7 @@
 
           <li class="photo__item photo__item--small block-photo">
             <div class="block-photo__container">
-              <img src="/images/catalog/photo-4-s.jpg" width="280" height="280" alt="Достопримечательность – Мост Дьявола.">
+              <img src="img/catalog/photo-4-s.jpg" width="280" height="280" alt="Достопримечательность – Мост Дьявола.">
               <div class="photo__discription-wrapper">
                 <div class="photo__text-wrapper">
                   <p class="photo__title">Мост дьявола</p>
@@ -159,7 +168,7 @@
           <div class="block-video__container">
             <p class="video__title">Все еще сомневаетесь?</p>
             <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-            <img src="/images/catalog/video-s.jpg" width="280" height="177" alt="Здесь должна быть видеопрезентация.">
+            <img src="img/catalog/video-s.jpg" width="280" height="177" alt="Здесь должна быть видеопрезентация.">
           </div>
         </div>
 
