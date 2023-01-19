@@ -21,18 +21,20 @@
   width: 320px;
 
   .popup__content-wrapper {
-    padding: 45px 40px 35px;
+    padding: 44px 40px 38px;
 
     @media (min-width: @tablet-width) {
       padding: 50px 46px;
+      gap: 24px;
     }
   }
 
   .button {
-    padding: 18px 64px 14px;
+    padding: 17px 77px 14px;
 
     @media (min-width: @tablet-width) {
-      padding: 18px 108px 14px;
+      padding: 18px 124px 14px;
+      margin-top: 20px;
     }
   }
 
@@ -45,10 +47,11 @@
   width: 320px;
 
   .popup__content-wrapper {
-    padding: 44px 38px 34px;
+    gap: 24px;
+    padding: 44px 38px 48px;
 
     @media (min-width: @tablet-width) {
-      padding: 52px 98px 30px;
+      padding: 44px 98px 52px;
     }
   }
 
@@ -63,6 +66,10 @@
 
   .button {
     width: 100%;
+
+    @media (min-width: @tablet-width) {
+      font-size: 21px;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -82,11 +89,24 @@
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
   color: @text-color-secondary;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .br-tablet {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: inline;
+    }
+  }
 }
 
 .popup-text {
@@ -99,4 +119,20 @@
   text-align: center;
   text-transform: uppercase;
   color: @text-color-secondary;
+
+  .br-mobile {
+    display: inline;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  .br-desktop {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: inline;
+    }
+  }
 }

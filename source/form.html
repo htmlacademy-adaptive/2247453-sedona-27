@@ -15,270 +15,266 @@
 </head>
 
 <body class="page-body">
-  <div class="page-body__container">
+<div class="page-body__container">
 
-    <header class="main-header">
-      <a class="main-header__logo" href="#">
-        <img src="img/logo.svg" width="185" height="96" alt="Логотип города Седона.">
-      </a>
+  <header class="main-header">
+    <a class="main-header__logo" href="./index.html">
+      <img alt="Логотип города Седона." height="96" src="img/logo.svg" width="185">
+    </a>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        <svg aria-hidden="true" class="toggle__icon-menu" focusable="false" height="23"
+             viewBox="0 0 23 23" width="23" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z"/>
+        </svg>
+        <svg aria-hidden="true" class="toggle__icon-cross visually-hidden" focusable="false"
+             height="23" viewBox="0 0 23 23" width="23" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z"/>
+        </svg>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="./index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="./catalog.html">
+              Фото и видео
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--logo-spacer"></li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current" href="./form.html">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/">
+              HTML ACADEMY
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <svg class="toggle__icon-menu" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
-            <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z"/>
-          </svg>
-          <svg class="toggle__icon-cross visually-hidden" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
-            <path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z"/>
-          </svg>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current" href="#">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                Фото и видео
-              </a>
-            </li>
-            <li class="main-nav__item main-nav__item--logo-spacer"></li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                Форма отзыва
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                HTML ACADEMY
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-    </header>
-
-    <main class="main-container">
-      <h1 class="visually-hidden">Страница отзыва</h1>
-
-      <div class="hero hero--compact">
-        <img class="hero__slogan" src="img/hero/hero-text.svg" width="282" height="214"
-        alt="Welcome to the gorgeus Sedona. Because Grand Canion sucks!">
-        <img class="hero__slogan-mini" src="img/hero/hero-compact-text.svg" width="229" height="39"
-        alt="Sedona.">
+  <main class="main-container">
+    <h1 class="visually-hidden">Страница отзыва</h1>
+    <div class="hero hero--compact">
+      <img alt="Sedona." class="hero__slogan-compact" height="39" src="img/hero/hero-text-compact.svg" width="229">
     </div>
-
-        <div class="page-intro">
-          <div class="page-intro__content-wrapper">
-            <p class="intro__title">Оставьте свой отзыв</p>
-            <p class="intro__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных
-              вами достопримечательностях</p>
+    <section class="page-intro page-intro--for-form">
+      <h2 class="visually-hidden">Описание страницы</h2>
+      <div class="page-intro__content-wrapper">
+        <p class="intro__title">Оставьте свой отзыв</p>
+        <p class="intro__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, <span
+          class="br-tablet"><br></span>а также о посещенных
+          вами достопримечательностях</p>
+      </div>
+    </section>
+    <form action="https://echo.htmlacademy.ru/" class="review-form" method="post">
+      <h2 class="visually-hidden">Форма опроса</h2>
+      <div class="review-block review-block--small review-block--name">
+        <div class="review-block__container">
+          <p class="block__title">Представьтесь:</p>
+          <div class="block__content-wrapper">
+            <ul class="review__list">
+              <li class="review__item">
+                <label class="review__label review__label--with-field" for="first-name">Имя*:</label>
+                <input class="review__field" id="first-name" name="first-name" placeholder="Введите имя" required
+                       type="text" value="Пётр">
+              </li>
+              <li class="review__item">
+                <label class="review__label review__label--with-field" for="last-name">Фамилия*:</label>
+                <input class="review__field" id="last-name" name="last-name" placeholder="Введите фамилию"
+                       required type="text" value="Пустота">
+              </li>
+              <li class="review__item">
+                <label class="review__label review__label--with-field" for="middle-name">Отчество:</label>
+                <input class="review__field" id="middle-name" name="middle-name" placeholder="Введите отчество"
+                       type="text" value="Викторович">
+              </li>
+            </ul>
           </div>
         </div>
-
-        <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
-
-        <div class="review-block review-block--small">
-          <div class="review-block__container">
-            <p class="block__title">Представьтесь:</p>
-            <div class="block__content-wrapper">
-              <ul class="review__list">
-                <li class="review__item">
-                  <label class="review__label review__label--with-field" for="first-name">Имя*:</label>
-                  <input class="review__field" type="text" id="first-name" name="first-name" placeholder="Введите имя"
-                  value="Пётр" required>
-                </li>
-                <li class="review__item">
-                  <label class="review__label review__label--with-field" for="last-name">Фамилия*:</label>
-                  <input class="review__field" type="text" id="last-name" name="last-name"
-                  placeholder="Введите фамилию" value="Пустота" required>
-                </li>
-                <li class="review__item">
-                  <label class="review__label review__label--with-field" for="middle-name">Отчество:</label>
-                  <input class="review__field" type="text" id="middle-name" name="middle-name"
-                  placeholder="Введите отчество" value="Викторович">
-                </li>
-              </ul>
+      </div>
+      <div class="review-block review-block--small review-block--contacts">
+        <div class="review-block__container">
+          <p class="block__title">Контактная информация:</p>
+          <div class="block__content-wrapper">
+            <ul class="review__list">
+              <li class="review__item review__item--telephone">
+                <label class="review__label review__label--with-field" for="telephone">Контактный телефон*:</label>
+                <input class="review__field review__field--with-icon" id="telephone" name="telephone" placeholder="Введите телефон"
+                       required type="number">
+              </li>
+              <li class="review__item review__item--email">
+                <label class="review__label review__label--with-field" for="email">Электронная почта*:</label>
+                <input class="review__field review__field--with-icon" id="email" name="email" placeholder="Введите e-mail"
+                       required type="email">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="review-block review-block--big review-block--impression">
+        <div class="review-block__container">
+          <p class="block__title">Ваше общее впечатление:</p>
+          <div class="block__content-wrapper">
+            <ul class="review__list">
+              <li class="review__item">
+                <label class="review__label review__label--control">
+                  <input checked class="control-input visually-hidden" name="rating" type="radio" value="good">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Скорее положительное</span>
+                </label>
+              </li>
+              <li class="review__item">
+                <label class="review__label review__label--control">
+                  <input class="control-input visually-hidden" name="rating" type="radio" value="bad">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Скорее отрицательное</span>
+                </label>
+              </li>
+              <li class="review__item">
+                <label class="review__label review__label--control">
+                  <input class="control-input visually-hidden" name="rating" type="radio" value="none">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Затрудняюсь ответить</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="review-block review-block--big review-block--sights">
+        <div class="review-block__container">
+          <p class="block__title">Посещенные <span class="br-tablet"><br></span>достопримечательности:</p>
+          <div class="block__content-wrapper">
+            <ul class="review__list">
+              <li class="review__item">
+                <label class="review__label review__label--control">
+                  <input checked class="control-input visually-hidden" name="devils-bridge" type="checkbox">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Мост Дьявола</span>
+                </label>
+              </li>
+              <li class="review__item">
+                <label class="review__label review__label--control">
+                  <input checked class="control-input visually-hidden" name="bell-mountain" type="checkbox">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Гора-Колокол</span>
+                </label>
+              </li>
+              <li class="review__item">
+                <label class="review__label review__label--control">
+                  <input checked class="control-input visually-hidden" name="slide-park" type="checkbox">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Слайд-парк</span>
+                </label>
+              </li>
+              <li class="review__item">
+                <label class="review__label review__label--control">
+                  <input class="control-input visually-hidden" name="red-rocks" type="checkbox">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Красные скалы</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="review-block review-block--big review-block--emotions">
+        <div class="review-block__container">
+          <p class="block__title">Опишите свои эмоции:</p>
+          <div class="block__content-wrapper">
+            <div class="text-area__wrapper">
+              <textarea class="review__text-area" maxlength="512" placeholder="Опишите подробно все свои восторги"
+                        wrap="soft"></textarea>
             </div>
           </div>
         </div>
+      </div>
+      <div class="review-form__button-wrapper">
+        <button class="button review-button style-button-like" type="submit">Отправить отзыв</button>
+      </div>
+      <small class="review-form__button-legend">* — обязательные поля</small>
+    </form>
+  </main>
 
-        <div class="review-block review-block--small">
-          <div class="review-block__container">
-            <p class="block__title">Контактная информация:</p>
-            <div class="block__content-wrapper">
-              <ul class="review__list">
-                <li class="review__item review__item--telephone">
-                  <label class="review__label review__label--with-field" for="telephone">Контактный телефон*:</label>
-                  <input class="review__field review__field--with-icon" type="number" id="telephone" name="telephone" placeholder="Введите телефон" required>
-                </li>
-                <li class="review__item review__item--email">
-                  <label class="review__label review__label--with-field" for="email">Электронная почта*:</label>
-                  <input class="review__field review__field--with-icon" type="email" id="email" name="email" placeholder="Введите e-mail" required>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-block review-block--big">
-          <div class="review-block__container">
-            <p class="block__title">Ваше общее впечатление:</p>
-            <div class="block__content-wrapper">
-              <ul class="review__list">
-                <li class="review__item">
-                  <label class="review__label review__label--control">
-                    <input class="control-input visually-hidden" type="radio" name="rating" value="good" checked>
-                    <span class="control-mark"></span>
-                    <span class="control-label">Скорее положительное</span>
-                  </label>
-                </li>
-                <li class="review__item">
-                  <label class="review__label review__label--control">
-                    <input class="control-input visually-hidden" type="radio" name="rating" value="bad">
-                    <span class="control-mark"></span>
-                    <span class="control-label">Скорее отрицательное</span>
-                  </label>
-                </li>
-                <li class="review__item">
-                  <label class="review__label review__label--control">
-                    <input class="control-input visually-hidden" type="radio" name="rating" value="none" checked>
-                    <span class="control-mark"></span>
-                    <span class="control-label">Затрудняюсь ответить</span>
-                  </label>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-block review-block--big">
-          <div class="review-block__container">
-            <p class="block__title">Посещенные <br>достопримечательности:</p>
-            <div class="block__content-wrapper">
-              <ul class="review__list">
-                <li class="review__item">
-                  <label class="review__label review__label--control">
-                    <input class="control-input visually-hidden" type="checkbox" name="devils-bridge" checked>
-                    <span class="control-mark"></span>
-                    <span class="control-label">Мост Дьявола</span>
-                  </label>
-                </li>
-                <li class="review__item">
-                  <label class="review__label review__label--control">
-                    <input class="control-input visually-hidden" type="checkbox" name="bell-mountain" checked>
-                    <span class="control-mark"></span>
-                    <span class="control-label">Гора-Колокол</span>
-                  </label>
-                </li>
-                <li class="review__item">
-                  <label class="review__label review__label--control">
-                    <input class="control-input visually-hidden" type="checkbox" name="slide-park" checked>
-                    <span class="control-mark"></span>
-                    <span class="control-label">Слайд-парк</span>
-                  </label>
-                </li>
-                <li class="review__item">
-                  <label class="review__label review__label--control">
-                    <input class="control-input visually-hidden" type="checkbox" name="red-rocks">
-                    <span class="control-mark"></span>
-                    <span class="control-label">Красные скалы</span>
-                  </label>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-block review-block--big">
-          <div class="review-block__container">
-            <p class="block__title">Опишите свои эмоции:</p>
-            <div class="block__content-wrapper">
-              <div class="text-area__wrapper">
-                <textarea class="review__text-area" wrap="soft" maxlength="512" placeholder="Опишите подробно все свои восторги"></textarea>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-form__button-wrapper">
-          <button class="button review-button style-button-like" type="submit">Отправить отзыв</button>
-        </div>
-        <small class="review-form__button-legend">* — обязательные поля</small>
-
-        </form>
-
-    </main>
-
-    <footer class="main-footer">
-      <div class="footer__wrapper">
-          <a class="footer__tag" href="#">#VISITSEDONA</a>
-        <div class="footer__social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link style-button-like" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Иконка ВКонтакте</span>
-                <svg class="footer-social-icon" aria-hidden="true" focusable="false" width="25" height="15">
+  <footer class="main-footer">
+    <div class="footer__wrapper">
+      <a class="footer__tag" href="#">#VISITSEDONA</a>
+      <div class="footer__social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link style-button-like" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Иконка ВКонтакте</span>
+              <svg aria-hidden="true" class="footer-social-icon" focusable="false" height="14" width="24">
                 <use xlink:href="./img/sprite.svg#icon-vk"></use>
               </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link style-button-like" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Иконка Telegram</span>
-                <svg class="footer-social-icon" aria-hidden="true" focusable="false" width="18" height="16">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link style-button-like" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Иконка Telegram</span>
+              <svg aria-hidden="true" class="footer-social-icon" focusable="false" height="18" width="22">
                 <use xlink:href="./img/sprite.svg#icon-telegram"></use>
               </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link style-button-like" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Иконка YouTube</span>
-                <svg class="footer-social-icon" aria-hidden="true" focusable="false" width="23" height="18">
-                  <use xlink:href="./img/sprite.svg#icon-youtube"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <a class="academy__link" href="https://htmlacademy.ru/">Разработано
-          <svg class="academy__link-icon" aria-hidden="true" focusable="false" width="27" height="35">
-            <use xlink:href="./img/sprite.svg#icon-academy"></use>
-          </svg>
-        </a>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link style-button-like" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Иконка YouTube</span>
+              <svg aria-hidden="true" class="footer-social-icon" focusable="false" height="14" width="20">
+                <use xlink:href="./img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
-    </footer>
-
-    <div class="popup-container popup-container--closed">
-      <div class="popup popup--error">
-        <div class="popup__content-wrapper">
-          <p class="popup-title">Что-то пошло не так!</p>
-          <p class="popup-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <div class="popup__button-wrapper">
-            <button class="button style-button-like" type="button">ОК</button>
-          </div>
-        </div>
-      </div>
+      <a class="academy__link academy__link--for-form" href="https://htmlacademy.ru/">Разработано
+        <svg aria-hidden="true" class="academy__link-icon" focusable="false" height="35" width="27">
+          <use xlink:href="./img/sprite.svg#icon-academy"></use>
+        </svg>
+      </a>
     </div>
+  </footer>
 
-    <div class="popup-container popup-container--closed">
-      <div class="popup popup--message">
-        <div class="popup__content-wrapper">
-          <p class="popup-title">Ваш отзыв отправлен!</p>
-          <p class="popup-text">Ваш отзыв отправлен! Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        </div>
+  <div class="popup-container popup-container--closed">
+    <div class="popup popup--error">
+      <div class="popup__content-wrapper">
+        <p class="popup-title">Что-то пошло <span class="br-tablet"><br></span>не так!</p>
+        <p class="popup-text">Проверьте поля, выделенные красным, скорее всего вы <span class="br-mobile"><br></span>забыли
+          их заполнить</p>
         <div class="popup__button-wrapper">
-          <button class="button style-button-like" type="button">Закрыть окно</button>
+          <button class="button style-button-like" type="button">ОК</button>
         </div>
       </div>
     </div>
-
   </div>
-  <script src="./js/mobile-menu.js"></script>
+
+  <div class="popup-container popup-container--closed">
+    <div class="popup popup--message">
+      <div class="popup__content-wrapper">
+        <p class="popup-title">Ваш отзыв отправлен!</p>
+        <p class="popup-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <span class="br-mobile br-desktop"><br></span>В
+          ближайшее
+          время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="popup__button-wrapper">
+        <button class="button style-button-like" type="button">Закрыть окно</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

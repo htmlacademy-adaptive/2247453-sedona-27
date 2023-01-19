@@ -32,16 +32,32 @@
   }
 }
 
+.photo__item--small {
+  @media (min-width: @desktop-width) {
+    .photo__description-wrapper {
+      padding: 20px 20px 16px 26px;
+    }
+
+    .photo__text {
+      margin-top: 4px;
+    }
+
+    .photo__like-wrapper {
+      margin-top: 9px;
+    }
+  }
+}
+
 .photo__item--small:nth-child(odd) {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    .photo__discription-wrapper {
+    .photo__description-wrapper {
       background-color: #eaeaea;
     }
   }
 }
 
-.photo__discription-wrapper {
-  padding: 15px 0 11px;
+.photo__description-wrapper {
+  padding: 16px 0 0;
 
   @media (min-width: @tablet-width) {
     padding: 22px 20px 15px;
@@ -91,6 +107,10 @@
 
 .photo__like-wrapper {
   margin-top: 11px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 5px;
+  }
 }
 
 .photo__like-button {
@@ -100,6 +120,11 @@
   background-color: transparent;
   fill: #000000;
   opacity: 0.3;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 0 0 5px;
+  }
 
   @media (min-width: @desktop-width) {
     fill: #ffffff;
@@ -108,7 +133,7 @@
 }
 
 .like__counter {
-  margin-left: 14px;
+  margin-left: 10px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
