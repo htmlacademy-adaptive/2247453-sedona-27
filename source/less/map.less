@@ -1,0 +1,39 @@
+.map {
+  display: flex;
+  max-height: 500px;
+  position: relative;
+  background-color: #ffffff;
+  padding: 0px 0 18px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    display: block;
+  }
+}
+
+.map::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  top: 161px;
+  left: 147px;
+  border-radius: 50%;
+  background-color: @primary-accent;
+  box-shadow: inset 0 0 0 5px #ffffff;
+
+  @media (min-width: @tablet-width) {
+    top: 165px;
+    left: 370px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 162px;
+    left: 586px;
+  }
+}

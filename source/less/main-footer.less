@@ -3,16 +3,16 @@
 }
 
 .footer__wrapper {
-  padding: 28px 0 22px 0;
+  padding: 20px 0 42px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 34px;
 
   @media (min-width: @tablet-width) {
     padding: 36px 0;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 }
 
@@ -20,6 +20,16 @@
   .font-title-plus();
   .style-interactive-text();
   text-decoration: none;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    left: -10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: -56px;
+    top: 2px;
+  }
 }
 
 .social__list {
@@ -39,7 +49,7 @@
 .footer__academy-site {
   margin-top: 40px;
 
-  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     margin-top: 0;
   }
 }
@@ -50,11 +60,48 @@
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
-  margin-right: 32px;
+  margin-right: 46px;
+  top: 14px;
+  left: 4px;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+    left: 0;
+  }
+  @media (min-width: @desktop-width) {
+    top: 2px;
+    left: 48px;
+  }
 }
 
 .academy__link-icon {
   position: absolute;
-  right: -32px;
-  bottom: -8px;
+  right: -40px;
+  bottom: -6px;
+}
+
+.academy__link--for-form {
+  left: 4px;
+
+  @media (min-width: @tablet-width) {
+    left: 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 0px;
+    left: 64px;
+  }
+}
+
+.academy__link--for-catalog {
+
+  @media (min-width: @tablet-width) {
+    top: 2px;
+    left: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 0px;
+    left: 64px;
+  }
 }

@@ -128,7 +128,9 @@
 }
 
 .main-nav__link--current {
-  color: @tertiary-accent;
+  @media (min-width: @tablet-width) {
+    color: @tertiary-accent;
+  }
 
   @media (max-width: @tablet-width) {
     -webkit-text-stroke: 1px #000000;

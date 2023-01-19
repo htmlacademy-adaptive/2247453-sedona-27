@@ -1,14 +1,23 @@
 .page-intro {
   background-color: @base-color;
+
+  .br-tablet {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: inline;
+    }
+  }
 }
 
 .page-intro__content-wrapper {
   display: flex;
   flex-direction: column;
   gap: 35px;
-  padding: 36px 20px 26px;
+  padding: 32px 20px 18px;
 
   @media (min-width: @tablet-width) {
+    gap:29px;
     padding: 48px 124px 56px;
   }
 
@@ -17,12 +26,64 @@
   }
 }
 
+.page-intro--for-index {
+  .intro__title {
+    @media (min-width: @tablet-width) {
+      font-size: 21px
+    }
+  }
+}
+
+.page-intro--for-form {
+  .page-intro__content-wrapper {
+    gap: 24px;
+    padding: 36px 20px 28px;
+
+    @media (min-width: @tablet-width) {
+      gap: 22px;
+      padding: 64px 124px 106px;
+    }
+
+    @media (min-width: @desktop-width) {
+      gap: 32px;
+      padding: 114px 358px 70px;
+    }
+  }
+
+  .intro__title {
+
+    @media (min-width: @tablet-width) {
+      font-size: 30px;
+    }
+  }
+}
+
+.page-intro--for-catalog {
+  .page-intro__content-wrapper {
+    gap: 24px;
+    padding: 38px 20px 36px;
+
+    @media (min-width: @tablet-width) {
+      gap: 32px;
+      padding: 64px 20px 84px;
+    }
+
+    @media (min-width: @desktop-width) {
+      gap: 34px;
+      padding: 98px 20px 88px;
+    }
+  }
+}
+
 .intro__title {
   .font-title();
   color: @text-color-secondary;
 
-  @media (min-width: @tablet-width), (min-width: @desktop-width) {
-    font-size: 21px;
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    .br-mobile {
+      display: none;
+    }
   }
 }
 

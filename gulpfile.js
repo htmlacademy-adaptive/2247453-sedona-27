@@ -9,14 +9,14 @@ import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
-import svgo from 'gulp-svgo';
+import svgmin from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 
 // Styles
 
 export const styles = () => {
-  return gulp.src('source/less/style.less', { sourcemaps: true })
+  return gulp.src('source/less/style.less', {sourcemaps: true})
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
@@ -24,7 +24,7 @@ export const styles = () => {
       csso()
     ]))
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('build/css', {sourcemaps: '.'}))
     .pipe(browser.stream());
 }
 
@@ -32,7 +32,7 @@ export const styles = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('build'));
 }
 
@@ -64,15 +64,15 @@ const imgCopy = () => {
 
 //SVG
 
-const svg = () => {
+export const svg = () => {
   return gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
-    .pipe(svgo())
+    .pipe(svgmin())
     .pipe(gulp.dest('build/img'));
 }
 
-const sprite = () => {
+export const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
-    .pipe(svgo())
+    .pipe(svgmin())
     .pipe(svgstore({inlineSvg: true}))
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'));
@@ -90,7 +90,7 @@ const copy = (done) => {
 
 //Clean
 
-export const clean =() => {
+export const clean = () => {
   return del('build');
 }
 
@@ -110,7 +110,7 @@ const server = (done) => {
 
 //Reload
 
-const reload = (done) => {
+export const reload = (done) => {
   browser.reload();
   done();
 }
@@ -120,7 +120,7 @@ const reload = (done) => {
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
   gulp.watch('source/js/*.js', gulp.series(js));
-  gulp.watch('source/*.html'), gulp.series(html, reload);
+  gulp.watch('source/*.html', gulp.series(html, reload));
   // gulp.watch('source/*.html').on('change', browser.reload);
 }
 //Build
@@ -129,7 +129,7 @@ export const build = gulp.series(
   clean,
   copy,
   imgBasic,
-  gulp.parallel (
+  gulp.parallel(
     styles,
     html,
     js,
