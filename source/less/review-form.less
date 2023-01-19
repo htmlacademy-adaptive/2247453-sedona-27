@@ -4,13 +4,14 @@
   grid-template-columns: 1fr;
 
   @media (min-width: @tablet-width) {
-    grid-template-columns: 2fr;
+    grid-template-columns: repeat(2, 324px);
     column-gap: 0;
     row-gap: 42px;
     padding: 0 60px 70px;
   }
 
   @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(2, 480px);
     padding: 0 120px 55px;
     column-gap: 0;
     row-gap: 56px;
