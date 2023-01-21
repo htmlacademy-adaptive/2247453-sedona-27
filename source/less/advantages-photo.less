@@ -4,6 +4,10 @@
   img {
     object-fit: cover;
     display: block;
+
+    @media (max-width: @tablet-width) {
+      max-height: 260px;
+    }
   }
 
   @media (min-width: @tablet-width) {
