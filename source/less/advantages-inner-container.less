@@ -1,0 +1,32 @@
+.advantages-inner-container {
+  @media (min-width: @tablet-width) {
+    grid-column: span 3;
+  }
+}
+
+.advantages__inner-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: #ffffff;
+  padding: 30px 18px 46px;
+
+  @media (min-width: @tablet-width) {
+    gap: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+  }
+}
+
+.inner-list__item {
+
+  .advantages-item__title,
+  .advantages-item__description {
+    text-align: left;
+
+    @media (min-width: @tablet-width) {
+      text-align: center;
+    }
+  }
+}

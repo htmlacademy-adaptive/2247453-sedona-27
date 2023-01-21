@@ -68,24 +68,26 @@
       <img alt="Welcome to the gorgeus Sedona. Because Grand Canion sucks!" class="hero__slogan" height="214" src="img/hero/hero-text.svg"
            width="282">
     </div>
-    <section class="page-intro page-intro--for-index">
+    <section class="page-intro page-intro--small-title">
       <h2 class="visually-hidden">Описание страницы</h2>
       <div class="page-intro__content-wrapper">
-        <p class="intro__title">СЕДОНА — небольшой <span class="br-mobile"><br></span> городок в Аризоне, заслуживающий
+        <p class="page-intro__title">СЕДОНА — небольшой <span class="br-mobile"><br></span> городок в Аризоне, заслуживающий
           большего!</p>
-        <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <p class="page-intro__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
     </section>
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="advantages-list">
-        <li class="advantages__item item--primary-accent item--first">
+
+        <li class="advantages-list__item advantages-item advantages-item--primary-accent advantages-item--first">
           <h3 class="advantages-item__title">Настоящий <span class="br-tablet"><br></span>городок</h3>
           <span class="advantages-item__counter">№ 1</span>
           <p class="advantages-item__description">Седона не аттракцион для туристов, <span
             class="br-desktop"><br></span>там течёт своя жизнь</p>
         </li>
-        <li class="advantages-photo">
+
+        <li class="advantages-list__item advantages-photo">
           <picture>
             <source media="(min-width: 1200px)" width="800" height="256" srcset="img/index/photo-city-desktop.webp 1x, img/index/photo-city-desktop@2x.webp 2x"
                     type="image/webp">
@@ -102,7 +104,8 @@
                  srcset="img/index/photo-city-mobile@2x.jpg 2x" >
           </picture>
         </li>
-        <li class="advantages-inner-container">
+
+        <li class="advantages-list__item advantages-inner-container">
           <ul class="advantages__inner-list">
             <li class="inner-list__item advantages__item--with-image advantages__item--housing">
               <h3 class="advantages-item__title">Жильё</h3>
@@ -122,13 +125,15 @@
             </li>
           </ul>
         </li>
-        <li class="advantages__item item--primary-accent">
+
+        <li class="advantages-list__item advantages-item advantages-item--primary-accent">
           <h3 class="advantages-item__title">Там есть <span class="br-tablet"><br></span>мост дьявола</h3>
           <span class="advantages-item__counter">№ 2</span>
           <p class="advantages-item__description">Да, по нему можно пройти! <span class="br-desktop"><br></span>Если вы
             осмелитесь, конечно</p>
         </li>
-        <li class="advantages-photo advantages-photo--shifted">
+
+        <li class="advantages-list__item advantages-photo advantages-photo--shifted">
           <picture>
             <source media="(min-width: 1200px)" width="800" height="256" srcset="img/index/photo-bridge-desktop.webp 1x, img/index/photo-bridge-desktop@2x.webp 2x"
                     type="image/webp">
@@ -145,34 +150,38 @@
                  srcset="img/index/photo-bridge-mobile@2x.jpg 2x" >
           </picture>
         </li>
-        <li class="inner-list__item inner-list__item--secondary item--secondary-accent advantages__item--without-image">
+
+        <li class="advantages-list__item advantages-item advantages-item--secondary-accent advantages-item--without-image">
           <h3 class="advantages-item__title">Небольшая <span class="br-tablet"><br></span>площадь</h3>
           <span class="advantages-item__counter">№ 3</span>
           <p class="advantages-item__description">Все интересные места находятся очень близко</p>
         </li>
-        <li class="inner-list__item inner-list__item--secondary item--secondary-accent advantages__item--without-image">
+
+        <li class="advantages-list__item advantages-item advantages-item--secondary-accent advantages-item--without-image">
           <h3 class="advantages-item__title">Красивая <span class="br-tablet"><br></span>дорога</h3>
           <span class="advantages-item__counter">№ 4</span>
           <p class="advantages-item__description">Ехать в Седону из Лас-Вегаса совсем <span
             class="br-tablet"><br></span>не скучно!</p>
         </li>
-        <li class="inner-list__item inner-list__item--secondary item--secondary-accent advantages__item--without-image">
+
+        <li class="advantages-list__item advantages-item advantages-item--secondary-accent advantages-item--without-image">
           <h3 class="advantages-item__title">Мало <span class="br-tablet"><br></span>туристов</h3>
           <span class="advantages-item__counter">№ 5</span>
           <p class="advantages-item__description">Большинство едет в Гранд Каньон и <span class="br-desktop"><br></span>толпится
             там</p>
         </li>
+
       </ul>
     </section>
     <section class="hotel-search">
       <h2 class="visually-hidden">Поиск гостиницы</h2>
-      <div class="search__text-wrapper">
+      <div class="hotel-search__text-wrapper">
         <p class="hotel-search__title">Заинтересовались?</p>
         <p class="hotel-search__description">Укажите предполагаемые даты поездки, <span class="br-tablet"><br></span>и
           мы покажем вам лучшие предложения
           гостиниц в Седоне</p>
       </div>
-      <a class="button search-button style-button-like" href="#">Найти Гостиницу</a>
+      <a class="button search--button style-button-like" href="#">Найти Гостиницу</a>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Седона на карте</h2>
@@ -195,9 +204,9 @@
   </main>
 
   <footer class="main-footer">
-    <div class="footer__wrapper">
-      <a class="footer__tag" href="#">#VISITSEDONA</a>
-      <div class="footer__social">
+    <div class="main-footer__wrapper">
+      <a class="main-footer__tag" href="#">#VISITSEDONA</a>
+      <div class="main-footer__social social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social__list">
           <li class="social__item">
@@ -226,7 +235,7 @@
           </li>
         </ul>
       </div>
-      <a class="academy__link" href="https://htmlacademy.ru/">Разработано
+      <a class="main-footer__academy-link" href="https://htmlacademy.ru/">Разработано
         <svg aria-hidden="true" class="academy__link-icon" focusable="false" height="35" width="27">
           <use xlink:href="./img/sprite.svg#icon-academy"></use>
         </svg>

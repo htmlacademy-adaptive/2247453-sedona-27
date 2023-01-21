@@ -22,7 +22,7 @@
   }
 }
 
-.photo__item--full-wide {
+.block-photo--full-wide {
   @media (min-width: @tablet-width) {
     grid-column: span 2;
   }
@@ -32,31 +32,31 @@
   }
 }
 
-.photo__item--small {
+.block-photo--small {
   @media (min-width: @desktop-width) {
-    .photo__description-wrapper {
+    .block-photo__description-wrapper {
       padding: 20px 20px 16px 26px;
     }
 
-    .photo__text {
+    .block-photo__text {
       margin-top: 4px;
     }
 
-    .photo__like-wrapper {
+    .block-photo__like-wrapper {
       margin-top: 9px;
     }
   }
 }
 
-.photo__item--small:nth-child(odd) {
+.block-photo--small:nth-child(odd) {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    .photo__description-wrapper {
+    .block-photo__description-wrapper {
       background-color: #eaeaea;
     }
   }
 }
 
-.photo__description-wrapper {
+.block-photo__description-wrapper {
   padding: 16px 0 0;
 
   @media (min-width: @tablet-width) {
@@ -76,7 +76,7 @@
   }
 }
 
-.photo__title {
+.block-photo__title {
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -91,7 +91,7 @@
   }
 }
 
-.photo__text {
+.block-photo__text {
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -105,7 +105,7 @@
   }
 }
 
-.photo__like-wrapper {
+.block-photo__like-wrapper {
   margin-top: 11px;
 
   @media (min-width: @tablet-width) {
@@ -113,7 +113,7 @@
   }
 }
 
-.photo__like-button {
+.block-photo__like {
   width: 23px;
   height: 21px;
   border: 0;
@@ -132,7 +132,7 @@
   }
 }
 
-.like__counter {
+.block-photo__like-counter {
   margin-left: 10px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;

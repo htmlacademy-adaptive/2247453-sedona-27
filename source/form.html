@@ -67,11 +67,11 @@
     <div class="hero hero--compact">
       <img alt="Sedona." class="hero__slogan-compact" height="39" src="img/hero/hero-text-compact.svg" width="229">
     </div>
-    <section class="page-intro page-intro--for-form">
+    <section class="page-intro page-intro--second-style">
       <h2 class="visually-hidden">Описание страницы</h2>
       <div class="page-intro__content-wrapper">
-        <p class="intro__title">Оставьте свой отзыв</p>
-        <p class="intro__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, <span
+        <p class="page-intro__title">Оставьте свой отзыв</p>
+        <p class="page-intro__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, <span
           class="br-tablet"><br></span>а также о посещенных
           вами достопримечательностях</p>
       </div>
@@ -80,22 +80,22 @@
       <h2 class="visually-hidden">Форма опроса</h2>
       <div class="review-block review-block--small review-block--name">
         <div class="review-block__container">
-          <p class="block__title">Представьтесь:</p>
-          <div class="block__content-wrapper">
-            <ul class="review__list">
-              <li class="review__item">
-                <label class="review__label review__label--with-field" for="first-name">Имя*:</label>
-                <input class="review__field" id="first-name" name="first-name" placeholder="Введите имя" required
+          <p class="review-block__title">Представьтесь:</p>
+          <div class="review-block__content-wrapper">
+            <ul class="review-block__list">
+              <li class="review-block__list-item">
+                <label class="review-block__item-label review-block__item-label--with-field" for="first-name">Имя*:</label>
+                <input class="review-block__item-field" id="first-name" name="first-name" placeholder="Введите имя" required
                        type="text" value="Пётр">
               </li>
-              <li class="review__item">
-                <label class="review__label review__label--with-field" for="last-name">Фамилия*:</label>
-                <input class="review__field" id="last-name" name="last-name" placeholder="Введите фамилию"
+              <li class="review-block__list-item">
+                <label class="review-block__item-label review-block__item-label--with-field" for="last-name">Фамилия*:</label>
+                <input class="review-block__item-field" id="last-name" name="last-name" placeholder="Введите фамилию"
                        required type="text" value="Пустота">
               </li>
-              <li class="review__item">
-                <label class="review__label review__label--with-field" for="middle-name">Отчество:</label>
-                <input class="review__field" id="middle-name" name="middle-name" placeholder="Введите отчество"
+              <li class="review-block__list-item">
+                <label class="review-block__item-label review-block__item-label--with-field" for="middle-name">Отчество:</label>
+                <input class="review-block__item-field" id="middle-name" name="middle-name" placeholder="Введите отчество"
                        type="text" value="Викторович">
               </li>
             </ul>
@@ -104,17 +104,17 @@
       </div>
       <div class="review-block review-block--small review-block--contacts">
         <div class="review-block__container">
-          <p class="block__title">Контактная информация:</p>
-          <div class="block__content-wrapper">
-            <ul class="review__list">
-              <li class="review__item review__item--telephone">
-                <label class="review__label review__label--with-field" for="telephone">Контактный телефон*:</label>
-                <input class="review__field review__field--with-icon" id="telephone" name="telephone" placeholder="Введите телефон"
+          <p class="review-block__title">Контактная информация:</p>
+          <div class="review-block__content-wrapper">
+            <ul class="review-block__list">
+              <li class="review-block__list-item review-block__list-item--telephone">
+                <label class="review-block__item-label review-block__item-label--with-field" for="telephone">Контактный телефон*:</label>
+                <input class="review-block__item-field review__field--with-icon" id="telephone" name="telephone" placeholder="Введите телефон"
                        required type="number">
               </li>
-              <li class="review__item review__item--email">
-                <label class="review__label review__label--with-field" for="email">Электронная почта*:</label>
-                <input class="review__field review__field--with-icon" id="email" name="email" placeholder="Введите e-mail"
+              <li class="review-block__list-item review-block__list-item--email">
+                <label class="review-block__item-label review-block__item-label--with-field" for="email">Электронная почта*:</label>
+                <input class="review-block__item-field review__field--with-icon" id="email" name="email" placeholder="Введите e-mail"
                        required type="email">
               </li>
             </ul>
@@ -123,28 +123,28 @@
       </div>
       <div class="review-block review-block--big review-block--impression">
         <div class="review-block__container">
-          <p class="block__title">Ваше общее впечатление:</p>
-          <div class="block__content-wrapper">
-            <ul class="review__list">
-              <li class="review__item">
-                <label class="review__label review__label--control">
-                  <input checked class="control-input visually-hidden" name="rating" type="radio" value="good">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Скорее положительное</span>
+          <p class="review-block__title">Ваше общее впечатление:</p>
+          <div class="review-block__content-wrapper">
+            <ul class="review-block__list">
+              <li class="review-block__list-item">
+                <label class="review-block__item-label review-block__label--control">
+                  <input checked class="review-block__control-input visually-hidden" name="rating" type="radio" value="good">
+                  <span class="review-block__control-mark"></span>
+                  <span class="review-block__control-label">Скорее положительное</span>
                 </label>
               </li>
-              <li class="review__item">
-                <label class="review__label review__label--control">
-                  <input class="control-input visually-hidden" name="rating" type="radio" value="bad">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Скорее отрицательное</span>
+              <li class="review-block__list-item">
+                <label class="review-block__item-label review-block__label--control">
+                  <input class="review-block__control-input visually-hidden" name="rating" type="radio" value="bad">
+                  <span class="review-block__control-mark"></span>
+                  <span class="review-block__control-label">Скорее отрицательное</span>
                 </label>
               </li>
-              <li class="review__item">
-                <label class="review__label review__label--control">
-                  <input class="control-input visually-hidden" name="rating" type="radio" value="none">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Затрудняюсь ответить</span>
+              <li class="review-block__list-item">
+                <label class="review-block__item-label review-block__label--control">
+                  <input class="review-block__control-input visually-hidden" name="rating" type="radio" value="none">
+                  <span class="review-block__control-mark"></span>
+                  <span class="review-block__control-label">Затрудняюсь ответить</span>
                 </label>
               </li>
             </ul>
@@ -153,35 +153,35 @@
       </div>
       <div class="review-block review-block--big review-block--sights">
         <div class="review-block__container">
-          <p class="block__title">Посещенные <span class="br-tablet"><br></span>достопримечательности:</p>
-          <div class="block__content-wrapper">
-            <ul class="review__list">
-              <li class="review__item">
-                <label class="review__label review__label--control">
-                  <input checked class="control-input visually-hidden" name="devils-bridge" type="checkbox">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Мост Дьявола</span>
+          <p class="review-block__title">Посещенные <span class="br-tablet"><br></span>достопримечательности:</p>
+          <div class="review-block__content-wrapper">
+            <ul class="review-block__list">
+              <li class="review-block__list-item">
+                <label class="review-block__item-label review-block__label--control">
+                  <input checked class="review-block__control-input visually-hidden" name="devils-bridge" type="checkbox">
+                  <span class="review-block__control-mark"></span>
+                  <span class="review-block__control-label">Мост Дьявола</span>
                 </label>
               </li>
-              <li class="review__item">
-                <label class="review__label review__label--control">
-                  <input checked class="control-input visually-hidden" name="bell-mountain" type="checkbox">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Гора-Колокол</span>
+              <li class="review-block__list-item">
+                <label class="review-block__item-label review-block__label--control">
+                  <input checked class="review-block__control-input visually-hidden" name="bell-mountain" type="checkbox">
+                  <span class="review-block__control-mark"></span>
+                  <span class="review-block__control-label">Гора-Колокол</span>
                 </label>
               </li>
-              <li class="review__item">
-                <label class="review__label review__label--control">
-                  <input checked class="control-input visually-hidden" name="slide-park" type="checkbox">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Слайд-парк</span>
+              <li class="review-block__list-item">
+                <label class="review-block__item-label review-block__label--control">
+                  <input checked class="review-block__control-input visually-hidden" name="slide-park" type="checkbox">
+                  <span class="review-block__control-mark"></span>
+                  <span class="review-block__control-label">Слайд-парк</span>
                 </label>
               </li>
-              <li class="review__item">
-                <label class="review__label review__label--control">
-                  <input class="control-input visually-hidden" name="red-rocks" type="checkbox">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Красные скалы</span>
+              <li class="review-block__list-item">
+                <label class="review-block__item-label review-block__label--control">
+                  <input class="review-block__control-input visually-hidden" name="red-rocks" type="checkbox">
+                  <span class="review-block__control-mark"></span>
+                  <span class="review-block__control-label">Красные скалы</span>
                 </label>
               </li>
             </ul>
@@ -190,26 +190,26 @@
       </div>
       <div class="review-block review-block--big review-block--emotions">
         <div class="review-block__container">
-          <p class="block__title">Опишите свои эмоции:</p>
-          <div class="block__content-wrapper">
-            <div class="text-area__wrapper">
-              <textarea class="review__text-area" maxlength="512" placeholder="Опишите подробно все свои восторги"
+          <p class="review-block__title">Опишите свои эмоции:</p>
+          <div class="review-block__content-wrapper">
+            <div class="review-block__text-area-wrapper">
+              <textarea class="review-block__text-area" maxlength="512" placeholder="Опишите подробно все свои восторги"
                         wrap="soft"></textarea>
             </div>
           </div>
         </div>
       </div>
       <div class="review-form__button-wrapper">
-        <button class="button review-button style-button-like" type="submit">Отправить отзыв</button>
+        <button class="button review--button style-button-like" type="submit">Отправить отзыв</button>
       </div>
       <small class="review-form__button-legend">* — обязательные поля</small>
     </form>
   </main>
 
   <footer class="main-footer">
-    <div class="footer__wrapper">
-      <a class="footer__tag" href="#">#VISITSEDONA</a>
-      <div class="footer__social">
+    <div class="main-footer__wrapper">
+      <a class="main-footer__tag" href="#">#VISITSEDONA</a>
+      <div class="main-footer__social social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social__list">
           <li class="social__item">
@@ -238,7 +238,7 @@
           </li>
         </ul>
       </div>
-      <a class="academy__link academy__link--for-form" href="https://htmlacademy.ru/">Разработано
+      <a class="main-footer__academy-link academy__link--second-style" href="https://htmlacademy.ru/">Разработано
         <svg aria-hidden="true" class="academy__link-icon" focusable="false" height="35" width="27">
           <use xlink:href="./img/sprite.svg#icon-academy"></use>
         </svg>
@@ -249,8 +249,8 @@
   <div class="popup-container popup-container--closed">
     <div class="popup popup--error">
       <div class="popup__content-wrapper">
-        <p class="popup-title">Что-то пошло <span class="br-tablet"><br></span>не так!</p>
-        <p class="popup-text">Проверьте поля, выделенные красным, скорее всего вы <span class="br-mobile"><br></span>забыли
+        <p class="popup__title">Что-то пошло <span class="br-tablet"><br></span>не так!</p>
+        <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы <span class="br-mobile"><br></span>забыли
           их заполнить</p>
         <div class="popup__button-wrapper">
           <button class="button style-button-like" type="button">ОК</button>
@@ -262,8 +262,8 @@
   <div class="popup-container popup-container--closed">
     <div class="popup popup--message">
       <div class="popup__content-wrapper">
-        <p class="popup-title">Ваш отзыв отправлен!</p>
-        <p class="popup-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <span class="br-mobile br-desktop"><br></span>В
+        <p class="popup__title">Ваш отзыв отправлен!</p>
+        <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <span class="br-mobile br-desktop"><br></span>В
           ближайшее
           время мы опубликуем его на сайте.</p>
       </div>
