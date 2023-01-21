@@ -35,7 +35,7 @@
   }
 }
 
-.video__title {
+.block-video__title {
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -50,7 +50,7 @@
   }
 }
 
-.video__text {
+.block-video__text {
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -64,6 +64,20 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 32px;
+    padding: 0 20px 0 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 34px;
+    padding: 0px 22px 0 22px;
+  }
+
+  .br-tablet {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: inline;
+    }
   }
 }
 
@@ -73,5 +87,9 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 82px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 80px;
   }
 }
