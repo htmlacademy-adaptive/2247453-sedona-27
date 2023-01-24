@@ -1,9 +1,10 @@
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
-let navToggleICONmenu = document.querySelector('.toggle__icon-menu');
-let navToggleICONcross = document.querySelector('.toggle__icon-cross');
+let navToggleICONmenu = document.querySelector('.main-nav__toggle-icon');
+let navToggleICONcross = document.querySelector('.main-nav__toggle-cross');
 
 navMain.classList.remove('main-nav--nojs');
+navMain.classList.add('main-nav--closed');
 
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--closed')) {

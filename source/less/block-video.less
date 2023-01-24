@@ -13,30 +13,10 @@
   @media (min-width: @desktop-width) {
     padding: 62px 200px 86px;
   }
-
-  &::before {
-    position: absolute;
-    content: '';
-    width: 48px;
-    height: 54px;
-    background-color: rgba(255, 255, 255, 0.7);
-    clip-path: polygon(100% 50%, 0 0, 0 100%);
-    bottom: 70px;
-    left: 50%;
-    margin-left: -24px;
-
-    @media (min-width: @tablet-width) {
-      bottom: 262px;
-    }
-
-    @media (min-width: @desktop-width) {
-      bottom: 306px;
-    }
-  }
 }
 
 .block-video__title {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif, "Verdana";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -51,7 +31,7 @@
 }
 
 .block-video__text {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif, "Verdana";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -69,7 +49,7 @@
 
   @media (min-width: @desktop-width) {
     margin-top: 34px;
-    padding: 0px 22px 0 22px;
+    padding: 0 22px 0 22px;
   }
 
   .br-tablet {
@@ -81,7 +61,11 @@
   }
 }
 
-.video__preview {
+.block-video__preview-wrapper {
+  position: relative;
+}
+
+.block-video__preview {
   display: block;
   margin-top: 40px;
 
@@ -91,5 +75,26 @@
 
   @media (min-width: @desktop-width) {
     margin-top: 80px;
+  }
+}
+
+.block-video__play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -27px;
+  margin-left: -24px;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+
+  svg {
+    fill-opacity: 0.7;
+  }
+
+  &:hover {
+    svg {
+      fill-opacity: 1;
+    }
   }
 }

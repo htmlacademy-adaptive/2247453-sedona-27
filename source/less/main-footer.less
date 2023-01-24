@@ -34,7 +34,7 @@
   }
 
   &--third-style {
-    @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
       left: -8px;
       top: 3px;
     }
@@ -63,19 +63,20 @@
     top: 0;
     left: 0;
   }
+
   @media (min-width: @desktop-width) {
     top: 2px;
     left: 48px;
   }
 }
 
-.academy__link-icon {
+.main-footer__link-icon {
   position: absolute;
   right: -40px;
   bottom: -6px;
 }
 
-.academy__link--second-style {
+.main-footer__academy-link--second-style {
   left: 4px;
 
   @media (min-width: @tablet-width) {
@@ -83,20 +84,19 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: 0px;
+    top: 0;
     left: 64px;
   }
 }
 
-.academy__link--third-style {
-
+.main-footer__academy-link--third-style {
   @media (min-width: @tablet-width) {
     top: 2px;
     left: 16px;
   }
 
   @media (min-width: @desktop-width) {
-    top: 0px;
+    top: 0;
     left: 64px;
   }
 }

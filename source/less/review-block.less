@@ -50,7 +50,6 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
-
     &::before {
       content: "";
       position: absolute;
@@ -75,7 +74,6 @@
   }
 
   @media (min-width: @desktop-width) {
-
     &::before {
       width: 280px;
     }
@@ -112,7 +110,7 @@
 
 .review-block__title {
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", sans-serif, "Verdana";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -120,17 +118,10 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  overflow-wrap: anywhere;
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
-  }
-
-  .br-tablet {
-    display: none;
-
-    @media (min-width: @tablet-width) {
-      display: inline;
-    }
   }
 }
 
@@ -153,13 +144,15 @@
 
 .review-block__list-item--telephone {
   position: relative;
+
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+    -webkit-appearance: none; /* stylelint-disable-line */
     margin: 0;
   }
-  input[type=number] {
-    -moz-appearance: textfield;
+
+  input[type=number] { /* stylelint-disable-line */
+    -moz-appearance: textfield; /* stylelint-disable-line */
   }
 }
 
@@ -202,7 +195,7 @@
   text-transform: uppercase;
 }
 
-.review-block__label--control {
+.review-block__item-label--control {
   position: relative;
   display: flex;
   align-items: center;
@@ -220,7 +213,7 @@
   border-radius: 4px;
 }
 
-.review-block__label--control:hover .review-block__control-mark {
+.review-block__item-label--control:hover .review-block__control-mark {
   background-color: #e5e5e5;
 }
 
@@ -261,7 +254,7 @@
 }
 
 .review-block__control-label {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", sans-serif, "Verdana";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -270,7 +263,7 @@
 }
 
 .review-block__item-field {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", sans-serif, "Verdana";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -296,7 +289,7 @@
   }
 }
 
-.review__field--with-icon {
+.review-block__item-field--with-icon {
   padding-right: 72px;
 
   @media (min-width: @desktop-width) {
@@ -319,7 +312,7 @@
   background-color: @field-color;
   width: 100%;
   min-height: 114px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", sans-serif, "Verdana";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -333,7 +326,7 @@
 }
 
 .review-block__text-area::placeholder {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", sans-serif, "Verdana";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -373,6 +366,7 @@
     @media (min-width: @tablet-width) {
       padding: 0 38px;
     }
+
     @media (min-width: @desktop-width) {
       padding: 0;
     }
@@ -400,6 +394,7 @@
       column-gap: 34px;
       row-gap: 16px;
     }
+
     @media (min-width: @desktop-width) {
       padding: 0;
       gap: 66px;
@@ -410,6 +405,7 @@
     @media (min-width: @desktop-width) {
       padding: 42px 56px 18px;
     }
+
     @media (min-width: @desktop-width) {
       padding: 62px 46px 32px;
     }
