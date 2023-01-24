@@ -6,7 +6,7 @@
   background-color: @base-color;
   padding: 36px 18px;
 
-  @media (max-width: @tablet-width) {
+  @media (max-width: @mobile-width-only) {
     &:first-child {
       padding: 68px 18px 40px;
       background-image: url("../img/index/mobile-divider.svg");
@@ -18,10 +18,12 @@
 
   @media (min-width: @tablet-width) {
     padding: 33px;
+    max-width: 256px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 50px;
+    max-width: 400px;
   }
 }
 
@@ -51,7 +53,7 @@
     text-align: center;
 
     @media (min-width: @tablet-width) {
-      padding: 0px 32px 0;
+      padding: 0 32px 0;
     }
   }
 
@@ -82,7 +84,7 @@
   content: url(../img/index/icon-house.svg); /* stylelint-disable-line */
   transform: scale(0.5);
 
-  @media (max-width: @tablet-width) {
+  @media (max-width: @mobile-width-only) {
     left: -20px;
     top: -26px;
   }
@@ -104,7 +106,7 @@
   content: url(../img/index/icon-burger.svg); /* stylelint-disable-line */
   transform: scale(0.5);
 
-  @media (max-width: @tablet-width) {
+  @media (max-width: @mobile-width-only) {
     left: -17px;
     top: -24px;
   }
@@ -126,7 +128,7 @@
   content: url(../img/index/icon-gift.svg); /* stylelint-disable-line */
   transform: scale(0.5);
 
-  @media (max-width: @tablet-width) {
+  @media (max-width: @mobile-width-only) {
     left: -19px;
     top: -26px;
   }
@@ -205,6 +207,14 @@
     display: none;
 
     @media (min-width: @tablet-width) {
+      display: inline;
+    }
+  }
+
+  .br-mobile {
+    display: none;
+
+    @media (max-width: @mobile-width-only) {
       display: inline;
     }
   }
