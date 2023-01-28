@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML Academy: Седона</title>
+  <title>Седона - Главная</title>
   <link href="./css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
@@ -16,9 +16,8 @@
 
 <body class="page-body">
   <div class="page-body__container">
-
-    <header class="main-header">
-      <a class="main-header__logo" href="./index.html">
+    <header class="main-header main-header--nojs">
+      <a class="main-header__logo main-header__logo--nojs" href="./index.html">
         <img alt="Логотип города Седона." height="96" src="img/logo.svg" width="185">
       </a>
       <nav class="main-nav main-nav--nojs">
@@ -61,7 +60,6 @@
         </div>
       </nav>
     </header>
-
     <main class="main-container">
       <h1 class="visually-hidden">Главная страница</h1>
       <div class="hero">
@@ -79,14 +77,11 @@
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
-
-          <li class="advantages-list__item advantages-item advantages-item--primary-accent advantages-item--first">
+          <li class="advantages-list__item advantages-item advantages-item--primary-accent advantages-item--first-one">
             <h3 class="advantages-item__title">Настоящий&nbsp;<br class="br-tablet">городок</h3>
             <span class="advantages-item__counter">№ 1</span>
-            <p class="advantages-item__description">Седона не аттракцион для туристов,&nbsp;<br
-                class="br-mobile br-desktop">там течёт своя жизнь</p>
+            <p class="advantages-item__description">Седона не аттракцион для туристов,&nbsp;<br class="br-mobile"><br class="br-desktop">там течёт своя жизнь</p>
           </li>
-
           <li class="advantages-list__item advantages-photo">
             <picture>
               <source media="(min-width: 1200px)" width="800" height="256"
@@ -104,35 +99,25 @@
                 srcset="img/index/photo-city-mobile@2x.jpg 2x">
             </picture>
           </li>
-
-          <li class="advantages-list__item advantages-inner-container">
-            <ul class="advantages-inner-list">
-              <li class="inner-list__item advantages__item advantages__item--with-image advantages__item--housing">
-                <h3 class="advantages-item__title">Жильё</h3>
-                <p class="advantages-item__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-              </li>
-              <li class="inner-list__item advantages__item advantages__item--with-image advantages__item--food">
-                <h3 class="advantages-item__title">Еда</h3>
-                <p class="advantages-item__description">Всегда заказывайте фирменный бургер,&nbsp;<br
-                    class="br-tablet">вы не разочаруетесь!
-                </p>
-              </li>
-              <li class="inner-list__item advantages__item advantages__item--with-image advantages__item--gifts ">
-                <h3 class="advantages-item__title">Сувениры</h3>
-                <p class="advantages-item__description">Не только китайского,&nbsp;<br class="br-tablet">но и
-                  местного производства!
-                </p>
-              </li>
-            </ul>
+          <li class="advantages-list__item advantages-item advantages-item--with-image advantages-item--housing">
+            <h3 class="advantages-item__title">Жильё</h3>
+            <p class="advantages-item__description advantages-item__description--with-image">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-
+          <li class="advantages-list__item advantages-item advantages-item--with-image advantages-item--food">
+            <h3 class="advantages-item__title">Еда</h3>
+            <p class="advantages-item__description advantages-item__description--with-image">Всегда заказывайте фирменный бургер,&nbsp;<br class="br-tablet">вы не разочаруетесь!
+            </p>
+          </li>
+          <li class="advantages-list__item advantages-item advantages-item--with-image advantages-item--with-image-last advantages-item--gifts">
+            <h3 class="advantages-item__title">Сувениры</h3>
+            <p class="advantages-item__description advantages-item__description--with-image">Не только китайского,&nbsp;<br class="br-tablet">но и местного производства!
+            </p>
+          </li>
           <li class="advantages-list__item advantages-item advantages-item--primary-accent">
             <h3 class="advantages-item__title">Там есть&nbsp;<br class="br-tablet">мост дьявола</h3>
             <span class="advantages-item__counter">№ 2</span>
-            <p class="advantages-item__description">Да, по нему можно пройти!&nbsp;<br class="br-desktop">Если вы
-              осмелитесь, конечно</p>
+            <p class="advantages-item__description">Да, по нему можно пройти!&nbsp;<br class="br-desktop">Если вы осмелитесь, конечно</p>
           </li>
-
           <li class="advantages-list__item advantages-photo advantages-photo--shifted">
             <picture>
               <source media="(min-width: 1200px)" width="800" height="256"
@@ -151,31 +136,25 @@
                 srcset="img/index/photo-bridge-mobile@2x.jpg 2x">
             </picture>
           </li>
-
           <li
             class="advantages-list__item advantages-item advantages-item--secondary-accent advantages-item--without-image">
             <h3 class="advantages-item__title">Небольшая&nbsp;<br class="br-tablet">площадь</h3>
             <span class="advantages-item__counter">№ 3</span>
             <p class="advantages-item__description">Все интересные места находятся очень близко</p>
           </li>
-
           <li
-            class="advantages-list__item advantages-item advantages-item--secondary-accent advantages-item--without-image">
+            class="advantages-list__item advantages-item advantages-item--secondary-accent advantages-item--without-image advantages-item--without-image-shifted">
             <h3 class="advantages-item__title">Красивая&nbsp;<br class="br-tablet">дорога</h3>
             <span class="advantages-item__counter">№ 4</span>
-            <p class="advantages-item__description">Ехать в Седону из Лас-Вегаса совсем <br class="br-tablet">не скучно!
+            <p class="advantages-item__description">Ехать в Седону из Лас-Вегаса совсем&nbsp;<br class="br-tablet">не скучно!
             </p>
           </li>
-
           <li
             class="advantages-list__item advantages-item advantages-item--secondary-accent advantages-item--without-image">
             <h3 class="advantages-item__title">Мало&nbsp;<br class="br-tablet">туристов</h3>
             <span class="advantages-item__counter">№ 5</span>
-            <p class="advantages-item__description">Большинство едет в Гранд Каньон и&nbsp;<br
-                class="br-desktop">толпится
-              там</p>
+            <p class="advantages-item__description">Большинство едет в Гранд Каньон и&nbsp;<br class="br-desktop">толпится там</p>
           </li>
-
         </ul>
       </section>
       <section class="hotel-search">
@@ -205,7 +184,6 @@
         </picture>
       </section>
     </main>
-
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <a class="main-footer__tag" href="#">#VISITSEDONA</a>
@@ -245,7 +223,6 @@
         </a>
       </div>
     </footer>
-
   </div>
   <script src="./js/mobile-menu.js"></script>
 </body>

@@ -19,12 +19,21 @@
 }
 
 .main-footer__tag {
-  .font-title-plus();
-  .style-interactive-text();
+  font-family: "PT Sans", "Verdana", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
   text-decoration: none;
   position: relative;
 
+  .style-interactive-text();
+
   @media (min-width: @tablet-width) {
+    top: 2px;
     left: -10px;
   }
 
@@ -50,14 +59,21 @@
 }
 
 .main-footer__academy-link {
-  .font-text();
-  .style-interactive-text();
+  font-family: "PT Sans", "Verdana", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  overflow-wrap: anywhere;
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
   margin-right: 46px;
   top: 14px;
   left: 4px;
+
+  .style-interactive-text();
 
   @media (min-width: @tablet-width) {
     top: 0;
@@ -77,9 +93,11 @@
 }
 
 .main-footer__academy-link--second-style {
+  top: 11px;
   left: 4px;
 
   @media (min-width: @tablet-width) {
+    top: 0;
     left: 14px;
   }
 

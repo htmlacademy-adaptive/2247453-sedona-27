@@ -4,10 +4,23 @@
   position: relative;
   flex-grow: 0;
   flex-shrink: 0;
+
+  &--nojs {
+    @media (max-width: @mobile-width-only) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
 }
 
 .main-header__logo {
   position: absolute;
   left: 50%;
   margin-left: -93px;
+
+  &--nojs {
+    @media (max-width: @mobile-width-only) {
+      bottom: -44px;
+    }
+  }
 }

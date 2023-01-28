@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML Academy: Седона</title>
+  <title>Седона - Отзыв</title>
   <link href="./css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
@@ -16,12 +16,11 @@
 
 <body class="page-body">
   <div class="page-body__container">
-
-    <header class="main-header">
-      <a class="main-header__logo" href="./index.html">
+    <header class="main-header main-header--nojs">
+      <a class="main-header__logo main-header__logo--nojs" href="./index.html">
         <img alt="Логотип города Седона." height="96" width="185" src="img/logo.svg">
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
           <svg aria-hidden="true" class="main-nav__toggle-icon" focusable="false" height="23" width="23"
@@ -61,7 +60,6 @@
         </div>
       </nav>
     </header>
-
     <main class="main-container">
       <h1 class="visually-hidden">Страница отзыва</h1>
       <div class="hero hero--compact">
@@ -214,7 +212,6 @@
         <small class="review-form__button-legend">* — обязательные поля</small>
       </form>
     </main>
-
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <a class="main-footer__tag" href="#">#VISITSEDONA</a>
@@ -224,7 +221,7 @@
             <li class="social__item">
               <a class="social__link style-button-like" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Иконка ВКонтакте</span>
-                <svg aria-hidden="true" class="footer-social-icon" focusable="false" height="14" width="24">
+                <svg aria-hidden="true" class="social__icon" focusable="false" height="14" width="24">
                   <use xlink:href="./img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
@@ -232,7 +229,7 @@
             <li class="social__item">
               <a class="social__link style-button-like" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Иконка Telegram</span>
-                <svg aria-hidden="true" class="footer-social-icon" focusable="false" height="18" width="22">
+                <svg aria-hidden="true" class="social__icon" focusable="false" height="18" width="22">
                   <use xlink:href="./img/sprite.svg#icon-telegram"></use>
                 </svg>
               </a>
@@ -240,7 +237,7 @@
             <li class="social__item">
               <a class="social__link style-button-like" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Иконка YouTube</span>
-                <svg aria-hidden="true" class="footer-social-icon" focusable="false" height="14" width="20">
+                <svg aria-hidden="true" class="social__icon" focusable="false" height="14" width="20">
                   <use xlink:href="./img/sprite.svg#icon-youtube"></use>
                 </svg>
               </a>
@@ -255,33 +252,28 @@
         </a>
       </div>
     </footer>
-
     <div class="popup-container popup-container--closed">
       <div class="popup popup--error">
         <div class="popup__content-wrapper">
           <p class="popup__title">Что-то пошло&nbsp;<br class="br-tablet">не так!</p>
-          <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы <br class="br-mobile">забыли
-            их заполнить</p>
+          <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы&nbsp;<br class="br-mobile">забыли их заполнить</p>
           <div class="popup__button-wrapper">
             <button class="button style-button-like" type="button">ОК</button>
           </div>
         </div>
       </div>
     </div>
-
     <div class="popup-container popup-container--closed">
       <div class="popup popup--message">
         <div class="popup__content-wrapper">
           <p class="popup__title">Ваш отзыв отправлен!</p>
-          <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.&nbsp;<br
-              class="br-mobile br-desktop">В ближайшее время мы опубликуем его на сайте.</p>
+          <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.&nbsp;<br>В ближайшее время мы опубликуем его на сайте.</p>
         </div>
         <div class="popup__button-wrapper">
           <button class="button style-button-like" type="button">Закрыть окно</button>
         </div>
       </div>
     </div>
-
   </div>
   <script src="./js/mobile-menu.js"></script>
 </body>
