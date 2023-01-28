@@ -2,7 +2,11 @@ let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
 let navToggleICONmenu = document.querySelector('.main-nav__toggle-icon');
 let navToggleICONcross = document.querySelector('.main-nav__toggle-cross');
+let mainHeader = document.querySelector('.main-header');
+let mainHeaderLogo = document.querySelector('.main-header__logo');
 
+mainHeader.classList.remove('main-header--nojs');
+mainHeaderLogo.classList.remove('main-header__logo--nojs');
 navMain.classList.remove('main-nav--nojs');
 navMain.classList.add('main-nav--closed');
 

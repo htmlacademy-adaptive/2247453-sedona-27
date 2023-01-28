@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML Academy: Седона</title>
+  <title>Седона - Каталог</title>
   <link href="./css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
@@ -16,12 +16,11 @@
 
 <body class="page-body">
   <div class="page-body__container">
-
-    <header class="main-header">
-      <a class="main-header__logo" href="./index.html">
+    <header class="main-header main-header--nojs">
+      <a class="main-header__logo main-header__logo--nojs" href="./index.html">
         <img alt="Логотип города Седона." height="96" src="img/logo.svg" width="185">
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
           <svg aria-hidden="true" class="main-nav__toggle-icon" focusable="false" height="23" width="23"
@@ -61,7 +60,6 @@
         </div>
       </nav>
     </header>
-
     <main class="main-container">
       <h1 class="visually-hidden">Страница каталога</h1>
       <div class="hero hero--compact">
@@ -71,30 +69,27 @@
         <h2 class="visually-hidden">Описание страницы</h2>
         <div class="page-intro__content-wrapper">
           <p class="page-intro__title">Фото и видео</p>
-          <p class="page-intro__text">Не можете решиться на путешествие из-за курса?&nbsp;<br
-              class="br-tablet">Фотографии
-            помогут вам забыть о политике и
-            экономике.</p>
+          <p class="page-intro__text">Не можете решиться на путешествие из-за курса?&nbsp;<br class="br-tablet">Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
-      </section>
-      <section>
+        </section>
+      <section class="photos">
         <h2 class="visually-hidden">Фотоблок</h2>
         <ul class="photo-list">
           <li class="photo-list__item block-photo block-photo--full-wide">
             <div class="block-photo__container">
               <picture>
-                <source media="(min-width: 1200px)" width="1200" height="400"
+                <source media="(min-width: 1200px)" width="100%" height="400"
                   srcset="img/catalog/photo-1-desktop.webp 1x, img/catalog/photo-1-desktop@2x.webp 2x"
                   type="image/webp">
-                <source media="(min-width: 768px)" width="648" height="400"
+                <source media="(min-width: 768px)" width="100%" height="400"
                   srcset="img/catalog/photo-1-tablet.webp 1x, img/catalog/photo-1-tablet@2x.webp 2x" type="image/webp">
                 <source srcset="img/catalog/photo-1-mobile.webp 1x, img/catalog/photo-1-mobile@2x.webp 2x"
                   type="image/webp">
-                <source media="(min-width: 1200px)" width="1200" height="400"
+                <source media="(min-width: 1200px)" width="100%" height="400"
                   srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" width="648" height="400"
+                <source media="(min-width: 768px)" width="100%" height="400"
                   srcset="img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
-                <img width="280" height="280" alt="Дорога, уходящая в закат." src="img/catalog/photo-1-mobile.jpg"
+                <img width="100%" height="280" alt="Дорога, уходящая в закат." src="img/catalog/photo-1-mobile.jpg"
                   srcset="img/catalog/photo-1-mobile@2x.jpg 2x">
               </picture>
               <div class="block-photo__description-wrapper">
@@ -117,18 +112,18 @@
           <li class="photo-list__item block-photo block-photo--small">
             <div class="block-photo__container">
               <picture>
-                <source media="(min-width: 1200px)" width="400" height="267"
+                <source media="(min-width: 1200px)" width="100%" height="267"
                   srcset="img/catalog/photo-2-desktop.webp 1x, img/catalog/photo-2-desktop@2x.webp 2x"
                   type="image/webp">
-                <source media="(min-width: 768px)" width="324" height="267"
+                <source media="(min-width: 768px)" width="100%" height="267"
                   srcset="img/catalog/photo-2-tablet.webp 1x, img/catalog/photo-2-tablet@2x.webp 2x" type="image/webp">
                 <source srcset="img/catalog/photo-2-mobile.webp 1x, img/catalog/photo-2-mobile@2x.webp 2x"
                   type="image/webp">
-                <source media="(min-width: 1200px)" width="400" height="267"
+                <source media="(min-width: 1200px)" width="100%" height="267"
                   srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" width="324" height="267"
+                <source media="(min-width: 768px)" width="100%" height="267"
                   srcset="img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
-                <img width="280" height="280" alt="Кактус на фоне гор." src="img/catalog/photo-2-mobile.jpg"
+                <img width="100%" height="280" alt="Кактус на фоне гор." src="img/catalog/photo-2-mobile.jpg"
                   srcset="img/catalog/photo-2-mobile@2x.jpg 2x">
               </picture>
               <div class="block-photo__description-wrapper">
@@ -151,18 +146,18 @@
           <li class="photo-list__item block-photo block-photo--small">
             <div class="block-photo__container">
               <picture>
-                <source media="(min-width: 1200px)" width="400" height="267"
+                <source media="(min-width: 1200px)" width="100%" height="267"
                   srcset="img/catalog/photo-3-desktop.webp 1x, img/catalog/photo-3-desktop@2x.webp 2x"
                   type="image/webp">
-                <source media="(min-width: 768px)" width="324" height="267"
+                <source media="(min-width: 768px)" width="100%" height="267"
                   srcset="img/catalog/photo-3-tablet.webp 1x, img/catalog/photo-3-tablet@2x.webp 2x" type="image/webp">
                 <source srcset="img/catalog/photo-3-mobile.webp 1x, img/catalog/photo-3-mobile@2x.webp 2x"
                   type="image/webp">
-                <source media="(min-width: 1200px)" width="400" height="267"
+                <source media="(min-width: 1200px)" width="100%" height="267"
                   srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" width="324" height="267"
+                <source media="(min-width: 768px)" width="100%" height="267"
                   srcset="img/catalog/photo-3-tablet.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x">
-                <img width="280" height="280" alt="Извилистая горная дорога среди деревьев."
+                <img width="100%" height="280" alt="Извилистая горная дорога среди деревьев."
                   src="img/catalog/photo-3-mobile.jpg" srcset="img/catalog/photo-3-mobile@2x.jpg 2x">
               </picture>
               <div class="block-photo__description-wrapper">
@@ -185,18 +180,18 @@
           <li class="photo-list__item block-photo block-photo--small">
             <div class="block-photo__container">
               <picture>
-                <source media="(min-width: 1200px)" width="400" height="267"
+                <source media="(min-width: 1200px)" width="100%" height="267"
                   srcset="img/catalog/photo-4-desktop.webp 1x, img/catalog/photo-4-desktop@2x.webp 2x"
                   type="image/webp">
-                <source media="(min-width: 768px)" width="324" height="267"
+                <source media="(min-width: 768px)" width="100%" height="267"
                   srcset="img/catalog/photo-4-tablet.webp 1x, img/catalog/photo-4-tablet@2x.webp 2x" type="image/webp">
                 <source srcset="img/catalog/photo-4-mobile.webp 1x, img/catalog/photo-4-mobile@2x.webp 2x"
                   type="image/webp">
-                <source media="(min-width: 1200px)" width="400" height="267"
+                <source media="(min-width: 1200px)" width="100%" height="267"
                   srcset="img/catalog/photo-4-desktop.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" width="324" height="267"
+                <source media="(min-width: 768px)" width="100%" height="267"
                   srcset="img/catalog/photo-4-tablet.jpg 1x, img/catalog/photo-4-tablet@2x.jpg 2x">
-                <img width="280" height="280" alt="Достопримечательность – Мост Дьявола."
+                <img width="100%" height="280" alt="Достопримечательность – Мост Дьявола."
                   src="img/catalog/photo-4-mobile.jpg" srcset="img/catalog/photo-4-mobile@2x.jpg 2x">
               </picture>
               <div class="block-photo__description-wrapper">
@@ -223,21 +218,20 @@
         <div class="block-video">
           <div class="block-video__container">
             <p class="block-video__title">Все еще сомневаетесь?</p>
-            <p class="block-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они&nbsp;<br
-                class="br-tablet">не подорожали в очередной раз!</p>
+            <p class="block-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они&nbsp;<br class="br-tablet">не подорожали в очередной раз!</p>
             <div class="block-video__preview-wrapper">
               <picture>
-                <source media="(min-width: 1200px)" width="800" height="500"
+                <source media="(min-width: 1200px)" width="100%" height="500"
                   srcset="img/catalog/video-desktop.webp 1x, img/catalog/video-desktop@2x.webp 2x" type="image/webp">
-                <source media="(min-width: 768px)" width="648" height="500"
+                <source media="(min-width: 768px)" width="100%" height="500"
                   srcset="img/catalog/video-tablet.webp 1x, img/catalog/video-tablet@2x.webp 2x" type="image/webp">
                 <source srcset="img/catalog/video-mobile.webp 1x, img/catalog/video-mobile@2x.webp 2x"
                   type="image/webp">
-                <source media="(min-width: 1200px)" width="800" height="500"
+                <source media="(min-width: 1200px)" width="100%" height="500"
                   srcset="img/catalog/video-desktop.jpg 1x, img/catalog/video-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" width="648" height="500"
+                <source media="(min-width: 768px)" width="100%" height="500"
                   srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
-                <img class="block-video__preview" width="280" height="177" alt="Здесь должна быть видеопрезентация."
+                <img class="block-video__preview" width="100%" height="177" alt="Здесь должна быть видеопрезентация."
                   src="img/catalog/video-mobile.jpg" srcset="img/catalog/video-mobile@2x.jpg 2x">
               </picture>
               <button class="block-video__play-button" type="button">
@@ -252,7 +246,6 @@
         </div>
       </section>
     </main>
-
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <a class="main-footer__tag main-footer__tag--third-style" href="#">#VISITSEDONA</a>
@@ -262,7 +255,7 @@
             <li class="social__item">
               <a class="social__link style-button-like" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Иконка ВКонтакте</span>
-                <svg aria-hidden="true" class="footer-social-icon" focusable="false" height="14" width="24">
+                <svg aria-hidden="true" class="social__icon" focusable="false" height="14" width="24">
                   <use xlink:href="./img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
@@ -270,7 +263,7 @@
             <li class="social__item">
               <a class="social__link style-button-like" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Иконка Telegram</span>
-                <svg aria-hidden="true" class="footer-social-icon" focusable="false" height="18" width="22">
+                <svg aria-hidden="true" class="social__icon" focusable="false" height="18" width="22">
                   <use xlink:href="./img/sprite.svg#icon-telegram"></use>
                 </svg>
               </a>
@@ -278,7 +271,7 @@
             <li class="social__item">
               <a class="social__link style-button-like" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Иконка YouTube</span>
-                <svg aria-hidden="true" class="footer-social-icon" focusable="false" height="14" width="20">
+                <svg aria-hidden="true" class="social__icon" focusable="false" height="14" width="20">
                   <use xlink:href="./img/sprite.svg#icon-youtube"></use>
                 </svg>
               </a>
@@ -293,9 +286,8 @@
         </a>
       </div>
     </footer>
-
-    <script src="./js/mobile-menu.js"></script>
   </div>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

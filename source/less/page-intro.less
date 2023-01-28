@@ -70,12 +70,19 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 59px 358px 45px;
+    padding: 59px 340px 45px;
   }
 }
 
 .page-intro__title {
-  .font-title();
+  font-family: "PT Sans", "Verdana", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
   color: @text-color-secondary;
 
   @media (min-width: @tablet-width) {
@@ -88,7 +95,13 @@
 }
 
 .page-intro__text {
-  .font-text();
+  font-family: "PT Sans", "Verdana", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  overflow-wrap: anywhere;
   text-transform: uppercase;
   color: @text-color-subsecondary;
 }

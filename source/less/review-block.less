@@ -84,22 +84,6 @@
   }
 }
 
-.review-block--big .review-block__list {
-  @media (min-width: @tablet-width) {
-    padding: 0 36px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 64px;
-  }
-}
-
 .review-block__container {
   padding: 24px 20px 38px;
 
@@ -110,7 +94,7 @@
 
 .review-block__title {
   margin: 0;
-  font-family: "PT Sans", sans-serif, "Verdana";
+  font-family: "PT Sans", "Verdana", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -140,6 +124,40 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.review-block__list--3-columns {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    justify-items: start;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 0 34px 0 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    padding: 0;
+  }
+}
+
+.review-block__list--4-columns {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    justify-items: start;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 0 66px 0 86px;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 46px;
+    padding: 0;
+  }
 }
 
 .review-block__list-item--telephone {
@@ -186,9 +204,14 @@
 
 .review-block__item-label {
   display: block;
-  .font-text();
-  padding-left: 16px;
+  font-family: "PT Sans", "Verdana", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
   text-align: left;
+  overflow-wrap: anywhere;
+  padding-left: 16px;
 }
 
 .review-block__item-label--with-field {
@@ -254,7 +277,7 @@
 }
 
 .review-block__control-label {
-  font-family: "PT Sans", sans-serif, "Verdana";
+  font-family: "PT Sans", "Verdana", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -263,7 +286,7 @@
 }
 
 .review-block__item-field {
-  font-family: "PT Sans", sans-serif, "Verdana";
+  font-family: "PT Sans", "Verdana", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -312,7 +335,7 @@
   background-color: @field-color;
   width: 100%;
   min-height: 114px;
-  font-family: "PT Sans", sans-serif, "Verdana";
+  font-family: "PT Sans", "Verdana", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -326,7 +349,7 @@
 }
 
 .review-block__text-area::placeholder {
-  font-family: "PT Sans", sans-serif, "Verdana";
+  font-family: "PT Sans", "Verdana", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -362,19 +385,9 @@
     }
   }
 
-  .review-block__list {
-    @media (min-width: @tablet-width) {
-      padding: 0 38px;
-    }
-
-    @media (min-width: @desktop-width) {
-      padding: 0;
-    }
-  }
-
   .review-block__content-wrapper {
     @media (min-width: @desktop-width) {
-      padding: 42px 56px 18px;
+      padding: 42px 24px 18px;
     }
   }
 }
@@ -388,26 +401,13 @@
     }
   }
 
-  .review-block__list {
-    @media (min-width: @tablet-width) {
-      padding: 0 86px;
-      column-gap: 34px;
-      row-gap: 16px;
-    }
-
-    @media (min-width: @desktop-width) {
-      padding: 0;
-      gap: 66px;
-    }
-  }
-
   .review-block__content-wrapper {
     @media (min-width: @desktop-width) {
       padding: 42px 56px 18px;
     }
 
     @media (min-width: @desktop-width) {
-      padding: 62px 46px 32px;
+      padding: 62px 42px 32px 40px;
     }
   }
 }
